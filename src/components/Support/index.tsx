@@ -17,19 +17,16 @@ export default function Support() {
                   <p className="text-base text-dark-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     Donec vitae tortor aliquam ante.
-                    
                   </p>
                 </div>
-
               </div>
 
-              <div className="w-full px-4 mt-12">
-              <h3 className="mb-6 font-heading text-base text-dark dark:text-white sm:text-xl">
-                Find Us Here
-              </h3>
-              
-            </div>
-            
+              <div className="mt-12 w-full px-4">
+                <h3 className="mb-6 font-heading text-base text-dark dark:text-white sm:text-xl">
+                  Find Us Here
+                </h3>
+              </div>
+
               <div className="w-full px-4 lg:w-1/2">
                 <div className="flex items-center">
                   <span className="mr-10 h-1 w-full max-w-[200px] bg-dark dark:bg-white"></span>
@@ -42,6 +39,28 @@ export default function Support() {
                   </a>
                 </div>
               </div>
+            </div>
+            <div
+              style={{
+                width: "100%",
+                height: "60vh",
+                borderRadius: "8px",
+                boxShadow: "0 4px 10px rgba(51, 46, 61, 0.9)", // Add shadow here
+                overflow: "hidden", // Ensures rounded corners work for the iframe
+              }}
+            >
+              {/* Google Maps Iframe */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3608.533814833539!2d55.3343434!3d25.2526222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d860e0e9893%3A0x430d10f5f736cfe4!2sBiz%20space%20Business%20Center!5e0!3m2!1sen!2sin!4v1728645730259!5m2!1sen!2sin"
+                style={{
+                  width: "100%",
+                  height: "100%", // Use 100% to fill the parent div
+                  border: "0",
+                }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
 
             <div className="-mx-4 flex flex-wrap pt-12">
@@ -195,7 +214,7 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Phone (Optional){" "}
+                    Phone Number{" "}
                   </label>
                   <input
                     type="text"

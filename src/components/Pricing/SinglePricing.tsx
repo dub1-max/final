@@ -38,30 +38,43 @@ export default function SinglePricing({ price }: any) {
                 <SingleOffer text="1 TB Photos and Videos" status="active" />
                 <SingleOffer text="Exclusive Support" status="active" />
                 <SingleOffer text="Free SEO Tools" status="inactive" />
-                <SingleOffer text="Custom Branding Strategy" status="inactive" />
+                <SingleOffer
+                  text="Custom Branding Strategy"
+                  status="inactive"
+                />
               </>
             )}
             {price?.nickname === "Professional" && (
               <>
                 <SingleOffer text="500 GB Storage" status="active" />
-                <SingleOffer text="Unlimited Photos and Videos" status="active" />
+                <SingleOffer
+                  text="Unlimited Photos and Videos"
+                  status="active"
+                />
                 <SingleOffer text="Exclusive Support" status="active" />
                 <SingleOffer text="Free SEO Tools" status="active" />
-                <SingleOffer text="Custom Branding Strategy" status="inactive" />
+                <SingleOffer
+                  text="Custom Branding Strategy"
+                  status="inactive"
+                />
               </>
             )}
             {price?.nickname === "Business" && (
               <>
                 <SingleOffer text="Unlimited Storage" status="active" />
-                <SingleOffer text="Unlimited Photos and Videos" status="active" />
+                <SingleOffer
+                  text="Unlimited Photos and Videos"
+                  status="active"
+                />
                 <SingleOffer text="Exclusive Support" status="active" />
                 <SingleOffer text="Free SEO Tools" status="active" />
                 <SingleOffer text="Custom Branding Strategy" status="active" />
               </>
             )}
           </div>
-          <br /><br />
-          
+          <br />
+          <br />
+
           <button
             className={`inline-flex items-center rounded px-8 py-[14px] font-heading text-base text-white duration-200 ${price?.nickname === "" ? "bg-primary hover:bg-primary/90" : "bg-dark hover:bg-dark/90"}`}
           >
@@ -83,7 +96,8 @@ export default function SinglePricing({ price }: any) {
           </button>
         </div>
       </div>
-<br /><hr />
+      <br />
+      <hr />
       {/* Enterprise Plan 
 
 
@@ -136,8 +150,6 @@ export default function SinglePricing({ price }: any) {
         </div>
       </div>*/}
 
-
-
       <div
         className={`w-full sm:w-1/2 lg:w-1/3 ${price?.nickname === "Starter" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
       >
@@ -170,30 +182,43 @@ export default function SinglePricing({ price }: any) {
                 <SingleOffer text="1 TB Photos and Videos" status="active" />
                 <SingleOffer text="Exclusive Support" status="active" />
                 <SingleOffer text="Free SEO Tools" status="inactive" />
-                <SingleOffer text="Custom Branding Strategy" status="inactive" />
+                <SingleOffer
+                  text="Custom Branding Strategy"
+                  status="inactive"
+                />
               </>
             )}
             {price?.nickname === "Professional" && (
               <>
                 <SingleOffer text="500 GB Storage" status="active" />
-                <SingleOffer text="Unlimited Photos and Videos" status="active" />
+                <SingleOffer
+                  text="Unlimited Photos and Videos"
+                  status="active"
+                />
                 <SingleOffer text="Exclusive Support" status="active" />
                 <SingleOffer text="Free SEO Tools" status="active" />
-                <SingleOffer text="Custom Branding Strategy" status="inactive" />
+                <SingleOffer
+                  text="Custom Branding Strategy"
+                  status="inactive"
+                />
               </>
             )}
             {price?.nickname === "Business" && (
               <>
                 <SingleOffer text="Unlimited Storage" status="active" />
-                <SingleOffer text="Unlimited Photos and Videos" status="active" />
+                <SingleOffer
+                  text="Unlimited Photos and Videos"
+                  status="active"
+                />
                 <SingleOffer text="Exclusive Support" status="active" />
                 <SingleOffer text="Free SEO Tools" status="active" />
                 <SingleOffer text="Custom Branding Strategy" status="active" />
               </>
             )}
           </div>
-          <br /><br />
-          
+          <br />
+          <br />
+
           <button
             className={`inline-flex items-center rounded px-8 py-[14px] font-heading text-base text-white duration-200 ${price?.nickname === "" ? "bg-primary hover:bg-primary/90" : "bg-dark hover:bg-dark/90"}`}
           >
@@ -215,9 +240,7 @@ export default function SinglePricing({ price }: any) {
           </button>
         </div>
       </div>
-
-
-
+      
     </>
   );
 }
