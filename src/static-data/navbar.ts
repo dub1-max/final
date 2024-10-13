@@ -29,31 +29,31 @@ export const navbarData: NavbarItem[] = [
       {
         id: uuid(),
         title: "Go Biz",
-        href: "/support",
+        href: "/go_biz",
         external: false,
       },
       {
         id: uuid(),
         title: "Pro Box",
-        href: "/support",
+        href: "/pro_box",
         external: false,
       },
       {
         id: uuid(),
         title: "Biz Space",
-        href: "/support",
+        href: "/biz_space",
         external: false,
       },
       {
         id: uuid(),
-        title: "Marina pearl",
-        href: "/support",
+        title: "Marina Pearl",
+        href: "/marina_pearl",
         external: false,
       },
       {
         id: uuid(),
-        title: "Connecting minds",
-        href: "/support",
+        title: "Connecting Minds",
+        href: "/connecting_minds",
         external: false,
       },
     ]
