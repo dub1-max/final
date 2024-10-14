@@ -9,25 +9,20 @@ export default function Support() {
                 <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
                   <span className="title !left-0 !translate-x-0">
                     {" "}
-                    SUPPORT{" "}
+                    Business Center In Dubai{" "}
                   </span>
                   <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-                    Need Any Help? Say hello
+                    Get in Touch for any kind of Service Office Spaces
                   </h2>
                   <p className="text-base text-dark-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Donec vitae tortor aliquam ante.
+                    You may contact us by filling in this form any time you need
+                    professional support or have any questions. You can also
+                    fill in the form to leave your comments or feedback.
                   </p>
                 </div>
               </div>
 
-              <div className="mt-12 w-full px-4">
-                <h3 className="mb-6 font-heading text-base text-dark dark:text-white sm:text-xl">
-                  Find Us Here
-                </h3>
-              </div>
-
-              <div className="w-full px-4 lg:w-1/2">
+              {/**<div className="w-full px-4 lg:w-1/2">
                 <div className="flex items-center">
                   <span className="mr-10 h-1 w-full max-w-[200px] bg-dark dark:bg-white"></span>
                   <a
@@ -38,9 +33,13 @@ export default function Support() {
                     info@gostartup.com{" "}
                   </a>
                 </div>
+              </div>*/}
+
+              <div className="w-full px-12 lg:w-1/2">
+                <div className="flex items-center"></div>
               </div>
             </div>
-            <div
+            {/*    <div
               style={{
                 width: "100%",
                 height: "60vh",
@@ -50,6 +49,7 @@ export default function Support() {
               }}
             >
               {/* Google Maps Iframe */}
+            {/*
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3608.533814833539!2d55.3343434!3d25.2526222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d860e0e9893%3A0x430d10f5f736cfe4!2sBiz%20space%20Business%20Center!5e0!3m2!1sen!2sin!4v1728645730259!5m2!1sen!2sin"
                 style={{
@@ -61,6 +61,170 @@ export default function Support() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+            </div>*/}
+
+            <div className="ml-auto w-full px-4 lg:w-1/2">
+              <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
+                <span className="title left-1000 !translate-x-0">
+                  {" "}
+                  Enquire Now{" "}
+                </span>
+                <h2 className="mb-6 ml-auto  text-right font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[45px] md:leading-[60px]">
+                  Get A Quote
+                </h2>
+              </div>
+            </div>
+            <br />
+
+            <div
+              style={{
+                boxShadow:
+                  "0 8px 20px 0px rgba(0, 48, 241, 0.5), 0 8px 40px 0px rgba(5, 230, 238, 0.5)",
+                borderRadius: "5px",
+              }}
+            >
+              <div className="mx-auto max-w-[780px] px-4 pt-[130px] sm:px-6 lg:px-8">
+                <form
+                  className="w-full" // Ensures the form takes full width of the container
+                  action="https://formbold.com/s/60p4z"
+                  method="POST"
+                >
+                  <div className="-mx-4 flex flex-wrap">
+                    <div className="sm:w-2/2 w-full px-4">
+                      <div className="mb-12">
+                        <label
+                          htmlFor="name"
+                          className="mb-3 block font-heading text-base text-dark dark:text-white"
+                        >
+                          {" "}
+                          Your Name{" "}
+                        </label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Full Name"
+                          className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
+                        />
+                      </div>
+                    </div>
+                    <div className="w-full px-4 sm:w-1/2">
+                      <div className="mb-12">
+                        <label
+                          htmlFor="email"
+                          className="mb-3 block font-heading text-base text-dark dark:text-white"
+                        >
+                          {" "}
+                          Email Address{" "}
+                        </label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Email Address"
+                          className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
+                        />
+                      </div>
+                    </div>
+                    <div className="w-full px-4 sm:w-1/2">
+                      <div className="mb-12">
+                        <label
+                          htmlFor="phone"
+                          className="mb-3 block font-heading text-base text-dark dark:text-white"
+                        >
+                          {" "}
+                          Phone Number{" "}
+                        </label>
+                        <input
+                          type="text"
+                          name="phone"
+                          id="phone"
+                          placeholder="Phone Number"
+                          className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
+                        />
+                      </div>
+                    </div>
+                    {/**<div className="w-full px-4 sm:w-1/2">
+                    <div className="mb-12">
+                      <label
+                        htmlFor="subject"
+                        className="mb-3 block font-heading text-base text-dark dark:text-white"
+                      >
+                        {" "}
+                        Subject{" "}
+                      </label>
+                      <input
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        placeholder="Type Subject"
+                        className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
+                      />
+                    </div>
+                  </div>*/}
+                    <div className="sm:w-2/2 w-full px-4">
+                      <div className="mb-12">
+                        <label
+                          htmlFor="message"
+                          className="mb-3 block font-heading text-base text-dark dark:text-white"
+                        >
+                          {" "}
+                          Message{" "}
+                        </label>
+                        <textarea
+                          rows={0}
+                          name="message"
+                          id="message"
+                          placeholder="Type Message"
+                          className="w-full resize-none border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div className="w-full px-4">
+                      <div className="mb-12">
+                        <label
+                          htmlFor="supportCheckbox"
+                          className="flex cursor-pointer select-none text-dark-text hover:text-primary"
+                        >
+                          <div className="relative">
+                            <input
+                              type="checkbox"
+                              id="supportCheckbox"
+                              className="sr-only"
+                            />
+                            <div className="box mr-4 mt-1 flex h-5 w-5 items-center justify-center rounded border dark:border-[#414652]">
+                              <span className="opacity-0">
+                                <svg
+                                  width="11"
+                                  height="8"
+                                  viewBox="0 0 11 8"
+                                  fill="none"
+                                  className="stroke-current"
+                                >
+                                  <path
+                                    d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
+                                    strokeWidth="0.4"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                          I have read the terms of the Service & I accept
+                          Privacy Policy
+                        </label>
+                      </div>
+                    </div>
+
+                    <div className="w-full px-4">
+                      <button className="flex w-full items-center justify-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <br />
             </div>
 
             <div className="-mx-4 flex flex-wrap pt-12">
@@ -162,148 +326,6 @@ export default function Support() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="mx-auto max-w-[780px] pt-[130px]">
-          <form
-            className=""
-            action="https://formbold.com/s/unique_form_id"
-            method="POST"
-          >
-            <div className="-mx-4 flex flex-wrap">
-              <div className="w-full px-4 sm:w-1/2">
-                <div className="mb-12">
-                  <label
-                    htmlFor="name"
-                    className="mb-3 block font-heading text-base text-dark dark:text-white"
-                  >
-                    {" "}
-                    Your Name{" "}
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Full Name"
-                    className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
-                  />
-                </div>
-              </div>
-              <div className="w-full px-4 sm:w-1/2">
-                <div className="mb-12">
-                  <label
-                    htmlFor="email"
-                    className="mb-3 block font-heading text-base text-dark dark:text-white"
-                  >
-                    {" "}
-                    Email Address{" "}
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email Address"
-                    className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
-                  />
-                </div>
-              </div>
-              <div className="w-full px-4 sm:w-1/2">
-                <div className="mb-12">
-                  <label
-                    htmlFor="phone"
-                    className="mb-3 block font-heading text-base text-dark dark:text-white"
-                  >
-                    {" "}
-                    Phone Number{" "}
-                  </label>
-                  <input
-                    type="text"
-                    name="phone"
-                    id="phone"
-                    placeholder="Phone Number"
-                    className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
-                  />
-                </div>
-              </div>
-              <div className="w-full px-4 sm:w-1/2">
-                <div className="mb-12">
-                  <label
-                    htmlFor="subject"
-                    className="mb-3 block font-heading text-base text-dark dark:text-white"
-                  >
-                    {" "}
-                    Subject{" "}
-                  </label>
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    placeholder="Type Subject"
-                    className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
-                  />
-                </div>
-              </div>
-              <div className="w-full px-4">
-                <div className="mb-10">
-                  <label
-                    htmlFor="message"
-                    className="mb-3 block font-heading text-base text-dark dark:text-white"
-                  >
-                    {" "}
-                    Message{" "}
-                  </label>
-                  <textarea
-                    rows={4}
-                    name="message"
-                    id="message"
-                    placeholder="Type Message"
-                    className="w-full resize-none border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
-                  ></textarea>
-                </div>
-              </div>
-
-              <div className="w-full px-4">
-                <div className="mb-12">
-                  <label
-                    htmlFor="supportCheckbox"
-                    className="flex cursor-pointer select-none text-dark-text hover:text-primary"
-                  >
-                    <div className="relative">
-                      <input
-                        type="checkbox"
-                        id="supportCheckbox"
-                        className="sr-only"
-                      />
-                      <div className="box mr-4 mt-1 flex h-5 w-5 items-center justify-center rounded border dark:border-[#414652]">
-                        <span className="opacity-0">
-                          <svg
-                            width="11"
-                            height="8"
-                            viewBox="0 0 11 8"
-                            fill="none"
-                            className="stroke-current"
-                          >
-                            <path
-                              d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
-                              strokeWidth="0.4"
-                            ></path>
-                          </svg>
-                        </span>
-                      </div>
-                    </div>
-                    I have read the terms of the Service & I accept Privacy
-                    Policy
-                  </label>
-                </div>
-              </div>
-
-              <div className="w-full px-4">
-                <button className="flex w-full items-center justify-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90">
-                  Send Message
-                </button>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </section>

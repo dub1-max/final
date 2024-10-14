@@ -20,13 +20,7 @@ export const navbarData: NavbarItem[] = [
     href: "#pricing",
     external: false,
   },
-  {
-    id: uuid(),
-    title: "Portfolio",
-    href: "#portfolio",
-    external: false,
-    
-  },
+
   {
     id: uuid(),
     title: "Locations",
@@ -64,6 +58,27 @@ export const navbarData: NavbarItem[] = [
       },
     ]
   },
+
+  {
+    id: uuid(),
+    title: "Portfolio",
+    submenu: [
+      {
+        id: uuid(),
+        title: "Gallery",
+        href: "/",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Business Centers",
+        href: "/docs",
+        external: false,
+      },
+
+    ]
+    
+  },
   {
     id: uuid(),
     title: "Gallery",
@@ -77,11 +92,28 @@ export const navbarData: NavbarItem[] = [
       },
       {
         id: uuid(),
+        title: "Locations",
+        href: "/docs",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Support",
+        href: "/support",
+        external: false,
+      },
+      {
+        id: uuid(),
         title: "Cost Calc",
         href: "/support",
         external: false,
       },
-
+      {
+        id: uuid(),
+        title: "Locations",
+        href: "/support",
+        external: false,
+      }
     ],
   },
   {
@@ -94,7 +126,12 @@ export const navbarData: NavbarItem[] = [
         href: "/",
         external: false,
       },
-
+      {
+        id: uuid(),
+        title: "Docs",
+        href: "/docs",
+        external: false,
+      },
       {
         id: uuid(),
         title: "Support",
@@ -111,12 +148,6 @@ export const navbarData: NavbarItem[] = [
         id: uuid(),
         title: "Sign in",
         href: "/auth/signin",
-        external: false,
-      },
-            {
-        id: uuid(),
-        title: "Docs",
-        href: "/docs",
         external: false,
       },
       {

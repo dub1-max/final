@@ -30,6 +30,7 @@ export default function Home() {
       <Brands />
       <Pricing />
       <HomeBlogSection />
+      {/**<Support /> map and support removed form main page*/} 
       <Support />
       <CallToAction />
     </>
