@@ -1,10 +1,10 @@
-import Connecting_Minds from "@/components/Connecting_Minds";
+import Connecting_Minds from "@/components/Connecting_Minds (extra)";
 import { Metadata } from "next";
 
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
-  title: `Garhoud | ${siteName}`,
+  title: `Connecting Minds | ${siteName}`,
   description: "This is Support page for Go Next.js",
   // other metadata
 };

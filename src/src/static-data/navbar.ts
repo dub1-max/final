@@ -4,7 +4,7 @@ import { v4 as uuid } from "uuid";
 export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
-    title: "Amenities",
+    title: "Features",
     href: "#features",
     external: false,
   },
@@ -20,7 +20,13 @@ export const navbarData: NavbarItem[] = [
     href: "#pricing",
     external: false,
   },
-
+  {
+    id: uuid(),
+    title: "Portfolio",
+    href: "#portfolio",
+    external: false,
+    
+  },
   {
     id: uuid(),
     title: "Locations",
@@ -28,23 +34,23 @@ export const navbarData: NavbarItem[] = [
     submenu: [
       {
         id: uuid(),
-        title: "Garhoud",
-        href: "/garhoud",
+        title: "Go Biz",
+        href: "/go_biz",
         external: false,
       },
       {
         id: uuid(),
-        title: "Deira",
-        href: "/deira",
+        title: "Pro Box",
+        href: "/pro_box",
         external: false,
       },
       {
         id: uuid(),
-        title: "Sheikh Zayed",
-        href: "/marina_pearl",
+        title: "Biz Space",
+        href: "/biz_space",
         external: false,
       },
-      /*{
+      {
         id: uuid(),
         title: "Marina Pearl",
         href: "/marina_pearl",
@@ -55,29 +61,8 @@ export const navbarData: NavbarItem[] = [
         title: "Connecting Minds",
         href: "/connecting_minds",
         external: false,
-      },*/
-    ]
-  },
-
-  {
-    id: uuid(),
-    title: "Portfolio",
-    submenu: [
-      {
-        id: uuid(),
-        title: "Gallery",
-        href: "/",
-        external: false,
       },
-      {
-        id: uuid(),
-        title: "Business Centers",
-        href: "/docs",
-        external: false,
-      },
-
     ]
-    
   },
   {
     id: uuid(),
@@ -92,28 +77,11 @@ export const navbarData: NavbarItem[] = [
       },
       {
         id: uuid(),
-        title: "Locations",
-        href: "/docs",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Support",
-        href: "/support",
-        external: false,
-      },
-      {
-        id: uuid(),
         title: "Cost Calc",
         href: "/support",
         external: false,
       },
-      {
-        id: uuid(),
-        title: "Locations",
-        href: "/support",
-        external: false,
-      }
+
     ],
   },
   {
@@ -126,12 +94,7 @@ export const navbarData: NavbarItem[] = [
         href: "/",
         external: false,
       },
-      {
-        id: uuid(),
-        title: "Docs",
-        href: "/docs",
-        external: false,
-      },
+
       {
         id: uuid(),
         title: "Support",
@@ -148,6 +111,12 @@ export const navbarData: NavbarItem[] = [
         id: uuid(),
         title: "Sign in",
         href: "/auth/signin",
+        external: false,
+      },
+            {
+        id: uuid(),
+        title: "Docs",
+        href: "/docs",
         external: false,
       },
       {
