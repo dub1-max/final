@@ -63,17 +63,17 @@ export default function Support() {
               ></iframe>
             </div>*/}
 
-            <div className="ml-auto w-full px-4 lg:w-1/2">
-              <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
-                <span className="title left-1000 !translate-x-0">
-                  {" "}
-                  Enquire Now{" "}
-                </span>
-                <h2 className="mb-6 ml-auto  text-right font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[45px] md:leading-[60px]">
+              <div className="w-full px-4 lg:w-1/2">
+                <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
+                  <span className="title !left-0 !translate-x-0">
+                    {" "}
+                    Enquire Now{" "}
+                  </span>
+                  <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
                   Get A Quote
-                </h2>
+                  </h2>
+                </div>
               </div>
-            </div>
             <br />
 
             <div

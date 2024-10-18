@@ -7,28 +7,26 @@ export default function Marina_pearl() {
             <div className="flex flex-wrap items-center border-b pb-14 dark:border-[#2E333D] lg:pb-0">
               <div className="w-full px-4 lg:w-1/2">
                 <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
-                  <span className="title !left-0 !translate-x-0">
-                    {" "}
-                    MARINA PEARL{" "}
-                  </span>
+                  <span className="title !left-0 !translate-x-0"> MARINA PEARL </span>
                   <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-                    Marina Pearl
+                  Marina Pearl
                   </h2>
                 </div>
               </div>
-
               <div className="mt-12 w-full px-4">
                 <h3 className="mb-6 font-heading text-base text-dark dark:text-white sm:text-xl">
                   Find Us Here
                 </h3>
               </div>
             </div>
+
             <div
               style={{
                 width: "100%",
                 height: "60vh",
                 borderRadius: "8px",
-                boxShadow: "0 4px 10px rgba(51, 46, 61, 0.9)", // Add shadow here
+                boxShadow:
+                "0 8px 20px 0px rgba(0, 48, 241, 0.5), 0 8px 40px 0px rgba(5, 230, 238, 0.5)",
                 overflow: "hidden", // Ensures rounded corners work for the iframe
               }}
             >
@@ -291,13 +289,14 @@ export default function Marina_pearl() {
                 <div className="w-full px-4">
                   <button className="flex w-full items-center justify-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90">
                     Send Message
-                  </button>
+                    </button>
                 </div>
               </div>
             </form>
           </div>
           <br />
-        </div>      </div>
+        </div>
+      </div>
     </section>
   );
 }

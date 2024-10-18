@@ -75,7 +75,6 @@ export const navbarData: NavbarItem[] = [
         href: "/docs",
         external: false,
       },
-
     ]
     
   },
@@ -92,12 +91,6 @@ export const navbarData: NavbarItem[] = [
       },
       {
         id: uuid(),
-        title: "Locations",
-        href: "/docs",
-        external: false,
-      },
-      {
-        id: uuid(),
         title: "Support",
         href: "/support",
         external: false,
@@ -105,12 +98,6 @@ export const navbarData: NavbarItem[] = [
       {
         id: uuid(),
         title: "Cost Calc",
-        href: "/support",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Locations",
         href: "/support",
         external: false,
       }

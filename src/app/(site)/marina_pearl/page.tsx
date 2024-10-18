@@ -4,7 +4,7 @@ import { Metadata } from "next";
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
-  title: `Marina Pearl | ${siteName}`,
+  title: `Sheikh Zayed | ${siteName}`,
   description: "This is Support page for Go Next.js",
   // other metadata
 };
