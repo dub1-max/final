@@ -10,7 +10,7 @@ export const navbarData: NavbarItem[] = [
   },
   {
     id: uuid(),
-    title: "About Us",
+    title: "AboutUs",
     href: "#about",
     external: false,
   },
@@ -58,8 +58,86 @@ export const navbarData: NavbarItem[] = [
       },*/
     ]
   },
-
   {
+    id: uuid(),
+    title: "CoWorking",
+
+    submenu: [
+      {
+        id: uuid(),
+        title: "Flexi Desk",
+        href: "/marina_pearl",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Desk Space",
+        href: "/coworking",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Sheikh Zayed",
+        href: "/marina_pearl",
+        external: false,
+      },
+      
+    ]
+  },
+  {
+    id: uuid(),
+    title: "MeetingRooms",
+
+    submenu: [
+      {
+        id: uuid(),
+        title: "Garhoud",
+        href: "/garhoud",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Deira",
+        href: "/deira",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Sheikh Zayed",
+        href: "/marina_pearl",
+        external: false,
+      },
+      
+    ]
+  },
+  {
+    id: uuid(),
+    title: "Offices",
+
+    submenu: [
+      {
+        id: uuid(),
+        title: "Garhoud",
+        href: "/garhoud",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Deira",
+        href: "/deira",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Sheikh Zayed",
+        href: "/marina_pearl",
+        external: false,
+      },
+     
+    ]
+  },
+
+ /* {
     id: uuid(),
     title: "Portfolio",
     submenu: [
@@ -75,9 +153,10 @@ export const navbarData: NavbarItem[] = [
         href: "/docs",
         external: false,
       },
+
     ]
     
-  },
+  },*/
   {
     id: uuid(),
     title: "Gallery",
@@ -91,6 +170,12 @@ export const navbarData: NavbarItem[] = [
       },
       {
         id: uuid(),
+        title: "Locations",
+        href: "/docs",
+        external: false,
+      },
+      {
+        id: uuid(),
         title: "Support",
         href: "/support",
         external: false,
@@ -100,10 +185,18 @@ export const navbarData: NavbarItem[] = [
         title: "Cost Calc",
         href: "/support",
         external: false,
+      },
+      {
+        id: uuid(),
+        title: "Locations",
+        href: "/support",
+        external: false,
       }
     ],
   },
-  {
+
+   
+ /* {
     id: uuid(),
     title: "Pages",
     submenu: [
@@ -148,8 +241,8 @@ export const navbarData: NavbarItem[] = [
         title: "Error 404",
         href: "/error",
         external: false,
-      }, */
+      }, 
     ],
-  },
+  }, */
   
 ];
