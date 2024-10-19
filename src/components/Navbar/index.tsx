@@ -64,7 +64,7 @@ const navigationHandler = () => {
       <header
         className={`header absolute left-0 top-0 w-full animate-fadeIn delay-[1500ms] ${stickyMenu ? "sticky-navbar" : ""}`}
       >
-        <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-20">
+        <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-10">
           <div className="relative z-[99] max-w-[250px] pr-4 lg:w-full lg:max-w-[220px] xl:max-w-[280px]">
             <Link href="/" className="inline-block">
               <Image
@@ -89,7 +89,7 @@ const navigationHandler = () => {
           >
             <div className="w-full self-center">
               <nav>
-                <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-6 lg:space-y-0 xl:space-x-10">
+                <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-6 lg:space-y-0 xl:space-x-6">
                   {navbarData.map((item) => (
                     <li
                       key={item?.id}
