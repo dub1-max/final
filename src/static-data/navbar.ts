@@ -19,7 +19,7 @@ export const navbarData: NavbarItem[] = [
     title: "Pricing",
     href: "#pricing",
     external: false,
-  },
+  }/*,
   {
     id: uuid(),
     title: "Gallery",
@@ -44,7 +44,7 @@ export const navbarData: NavbarItem[] = [
         external: false,
       }
     ],
-  },
+  }*/,
   {
     id: uuid(),
     title: "Locations",
