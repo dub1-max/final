@@ -193,7 +193,7 @@ const navigationHandler = () => {
               <div className="absolute bottom-20 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0">
                 <>
                   <Link
-                    href="#support"
+                    href="/support"
                     className="w-full whitespace-nowrap rounded bg-primary px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
                   >
                     Contact Us
