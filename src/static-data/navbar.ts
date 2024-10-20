@@ -20,7 +20,31 @@ export const navbarData: NavbarItem[] = [
     href: "#pricing",
     external: false,
   },
-
+  {
+    id: uuid(),
+    title: "Gallery",
+    
+    submenu: [
+      {
+        id: uuid(),
+        title: "Services Offered",
+        href: "/",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Support",
+        href: "#support",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Cost Calc",
+        href: "/support",
+        external: false,
+      }
+    ],
+  },
   {
     id: uuid(),
     title: "Locations",
@@ -74,40 +98,7 @@ export const navbarData: NavbarItem[] = [
         title: "Desk Space",
         href: "/coworking",
         external: false,
-      },
-      {
-        id: uuid(),
-        title: "Sheikh Zayed",
-        href: "/marina_pearl",
-        external: false,
-      },
-      
-    ]
-  },
-  {
-    id: uuid(),
-    title: "MeetingRooms",
-
-    submenu: [
-      {
-        id: uuid(),
-        title: "Garhoud",
-        href: "/garhoud",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Deira",
-        href: "/deira",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Sheikh Zayed",
-        href: "/marina_pearl",
-        external: false,
-      },
-      
+      }
     ]
   },
   {
@@ -117,23 +108,49 @@ export const navbarData: NavbarItem[] = [
     submenu: [
       {
         id: uuid(),
-        title: "Garhoud",
+        title: "Private Offices",
         href: "/garhoud",
         external: false,
       },
       {
         id: uuid(),
-        title: "Deira",
+        title: "Smart Cabins",
         href: "/deira",
         external: false,
       },
       {
         id: uuid(),
-        title: "Sheikh Zayed",
+        title: "Serivced Office",
         href: "/marina_pearl",
         external: false,
       },
      
+    ]
+  },
+  {
+    id: uuid(),
+    title: "MeetingRooms",
+
+    submenu: [
+      {
+        id: uuid(),
+        title: "Meet1",
+        href: "/",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Meet2",
+        href: "/",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Meet3",
+        href: "/",
+        external: false,
+      },
+      
     ]
   },
 
@@ -157,44 +174,6 @@ export const navbarData: NavbarItem[] = [
     ]
     
   },*/
-  {
-    id: uuid(),
-    title: "Gallery",
-    
-    submenu: [
-      {
-        id: uuid(),
-        title: "Services Offered",
-        href: "/",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Locations",
-        href: "/docs",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Support",
-        href: "/support",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Cost Calc",
-        href: "/support",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Locations",
-        href: "/support",
-        external: false,
-      }
-    ],
-  },
-
    
  /* {
     id: uuid(),
