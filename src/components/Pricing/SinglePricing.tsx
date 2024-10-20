@@ -6,7 +6,8 @@ export default function SinglePricing({ price }: any) {
   return (
     <>
       {/* Starter/Professional/Business Plan */}
-      <div
+      <div style={{borderRadius: "8px",
+                boxShadow:"0 8px 20px 0px rgba(0, 48, 241, 0.5), 0 8px 40px 0px rgba(5, 230, 238, 0.5)"}}
         className={`w-full sm:w-1/2 lg:w-1/3 ${price?.nickname === "" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
       >
         <div className="pb-20 pt-10 text-center">
@@ -151,7 +152,7 @@ export default function SinglePricing({ price }: any) {
       </div>*/}
 
       <div
-        className={`w-full sm:w-1/2 lg:w-1/3 ${price?.nickname === "Starter" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
+        className={`w-full sm:w-1/2 lg:w-1/3   ${price?.nickname === "Starter" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
       >
         <div className="pb-20 pt-10 text-center">
           <div className="border-b dark:border-[#2E333D]">
