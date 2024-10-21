@@ -1,10 +1,10 @@
-import Marina_pearl from "@/components/Marina_pearl";
+import Smart_Cabins from "@/components/Smart_Cabins";
 import { Metadata } from "next";
 
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
-  title: `Marina Pearl | ${siteName}`,
+  title: `Smart Cabins | ${siteName}`,
   description: "This is Support page for Go Next.js",
   // other metadata
 };
@@ -14,7 +14,7 @@ export default function ProBoxPage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-          <Marina_pearl />
+          <Smart_Cabins />
         </div>
       </section>
     </>

@@ -21,8 +21,7 @@ export default function SinglePricing({ price }: any) {
   };
 
   return (
-    <div style={{borderRadius: "8px",
-      boxShadow:"0 8px 20px 0px rgba(0, 48, 241, 0.5), 0 8px 40px 0px rgba(5, 230, 238, 0.5)"}}
+    <div
       className={`w-full sm:w-1/2 lg:w-1/2 ${price?.nickname === "Professional" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
     >
       <div className="pb-20 pt-10 text-center">
@@ -34,11 +33,11 @@ export default function SinglePricing({ price }: any) {
         </div>
         <div className="border-b py-10 dark:border-[#2E333D]">
           <h3 className="mb-6 flex items-end justify-center pt-2 font-heading text-base font-medium text-dark dark:text-white">
-            ${" "}
+            AED{" "}
             <sup className="-mb-2 text-[55px]">
               {" "}
-              {(price.unit_amount / 100).toLocaleString("en-US", {
-                currency: "USD",
+              {(price.unit_amount / 595).toLocaleString("en-US", {
+                currency: "AED",
               })}{" "}
             </sup>
             /month
@@ -51,26 +50,38 @@ export default function SinglePricing({ price }: any) {
         <div className="space-y-4 px-6 pb-[60px] pt-10 text-left sm:px-10 md:px-8 lg:px-10 xl:px-20">
           {price?.nickname === "Starter" && (
             <>
-              <SingleOffer text="100 GB Storage" status="active" />
-              <SingleOffer text="1 TB Photos and Videos" status="active" />
-              <SingleOffer text="Exclusive Support" status="active" />
-              <SingleOffer text="Free SEO Tools" status="inactive" />
-              <SingleOffer text="Custom Branding Strategy" status="inactive" />
-            </>
+            <SingleOffer text="24/7 access" status="inactive" />
+            <SingleOffer text="Access to business support services" status="inactive" />
+            <SingleOffer text="Access to the Open Coworking Lounges & Specialty Café" status="active" />
+            <SingleOffer text="Access to Shared Spaces" status="active" />
+            <SingleOffer text="Access to events and workshops" status="active" />
+            <SingleOffer text="Discount to book resources & services" status="active" />
+            <SingleOffer text="Dedicated local virtual phone at a cost" status="active" />
+            <SingleOffer text="Secure & Unlimited Wifi" status="active" />
+            <SingleOffer text="Beverages from our Specialty Café" status="active" />
+            <SingleOffer text="Private storage space for rent at additional cost" status="active" />
+          </>
+          
           )}
           {price?.nickname === "Professional" && (
             <>
-              <SingleOffer text="500 GB Storage" status="active" />
-              <SingleOffer text="Unlimited Photos and Videos" status="active" />
-              <SingleOffer text="Exclusive Support" status="active" />
-              <SingleOffer text="Free SEO Tools" status="active" />
-              <SingleOffer text="Custom Branding Strategy" status="inactive" />
-            </>
+            <SingleOffer text="24/7 access" status="active" />
+            <SingleOffer text="Access to business support services" status="active" />
+            <SingleOffer text="Access to the Open Coworking Lounges & Specialty Café" status="active" />
+            <SingleOffer text="Access to Shared Spaces" status="active" />
+            <SingleOffer text="Access to events and workshops" status="active" />
+            <SingleOffer text="Discount to book resources & services" status="active" />
+            <SingleOffer text="Dedicated local virtual phone at a cost" status="active" />
+            <SingleOffer text="Secure & Unlimited Wifi" status="active" />
+            <SingleOffer text="Beverages from our Specialty Café" status="active" />
+            <SingleOffer text="Private storage space for rent at additional cost" status="active" />
+          </>
           )}
         </div>
+        
         <button
           onClick={handleSubscription}
-          className={`inline-flex items-center rounded px-8 py-[14px] font-heading text-base text-white duration-200 ${price?.nickname === "Professional" ? "bg-primary hover:bg-primary/90" : "bg-dark hover:bg-dark/90"}`}
+          className="inline-flex items-center rounded px-8 py-[14px] font-heading text-base text-white bg-blue-600 hover:bg-blue-500 duration-200 shadow-lg hover:shadow-md transition-all"
         >
           Join This Plan
           <span className="pl-3">
@@ -88,6 +99,7 @@ export default function SinglePricing({ price }: any) {
             </svg>
           </span>
         </button>
+        
       </div>
     </div>
   );

@@ -24,11 +24,11 @@ export default function Home() {
       <Hero />
       <Features />
       <About />
-      {/*<Team />*/}
+      <Team />
       <Portfolio />
       <Testimonials />
       <Brands />
-      <Pricing />
+      {/*<Pricing />*/}
       <HomeBlogSection />
       {/**<Support /> map and support removed form main page*/} 
       <Support />

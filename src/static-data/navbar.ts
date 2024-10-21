@@ -13,13 +13,13 @@ export const navbarData: NavbarItem[] = [
     title: "AboutUs",
     href: "#about",
     external: false,
-  },
+  }/*,
   {
     id: uuid(),
     title: "Pricing",
     href: "#pricing",
     external: false,
-  }/*,
+  }*/,
   {
     id: uuid(),
     title: "Gallery",
@@ -44,7 +44,7 @@ export const navbarData: NavbarItem[] = [
         external: false,
       }
     ],
-  }*/,
+  },
   {
     id: uuid(),
     title: "Locations",
@@ -90,13 +90,13 @@ export const navbarData: NavbarItem[] = [
       {
         id: uuid(),
         title: "Flexi Desk",
-        href: "/marina_pearl",
+        href: "/flexi_desk",
         external: false,
       },
       {
         id: uuid(),
         title: "Desk Space",
-        href: "/coworking",
+        href: "/desk_space",
         external: false,
       }
     ]
@@ -109,19 +109,19 @@ export const navbarData: NavbarItem[] = [
       {
         id: uuid(),
         title: "Private Offices",
-        href: "/garhoud",
+        href: "/private_offices",
         external: false,
       },
       {
         id: uuid(),
         title: "Smart Cabins",
-        href: "/deira",
+        href: "/smart_cabins",
         external: false,
       },
       {
         id: uuid(),
-        title: "Serivced Office",
-        href: "/marina_pearl",
+        title: "Serviced Office",
+        href: "/serviced_offices",
         external: false,
       },
      
