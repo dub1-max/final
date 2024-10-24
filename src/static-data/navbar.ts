@@ -19,7 +19,7 @@ export const navbarData: NavbarItem[] = [
     title: "Pricing",
     href: "#pricing",
     external: false,
-  }*/,
+  },
   {
     id: uuid(),
     title: "Gallery",
@@ -44,18 +44,57 @@ export const navbarData: NavbarItem[] = [
         external: false,
       }
     ],
-  },
+  },*/
+  ,
   {
     id: uuid(),
-    title: "Locations",
+    title: "Garhoud",
 
     submenu: [
       {
         id: uuid(),
-        title: "Garhoud",
-        href: "/garhoud",
+        title: "Connecting Minds",
+        href: "/connecting_minds",
         external: false,
       },
+      {
+        id: uuid(),
+        title: "Pro Box",
+        href: "/pro_box",
+        external: false,
+      }
+    ]
+  },
+  {
+    id: uuid(),
+    title: "Deira",
+
+    submenu: [
+      {
+        id: uuid(),
+        title: "Go Biz",
+        href: "/go_biz",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Biz Space",
+        href: "/biz_space",
+        external: false,
+      }
+    ]
+  },
+  {
+    id: uuid(),
+    title: "SheikhZayed",
+
+    submenu: [
+      {
+        id: uuid(),
+        title: "Marina Pearl",
+        href: "/marina_pearl",
+        external: false,
+      }/*,
       {
         id: uuid(),
         title: "Deira",
@@ -68,7 +107,7 @@ export const navbarData: NavbarItem[] = [
         href: "/marina_pearl",
         external: false,
       },
-      /*{
+      {
         id: uuid(),
         title: "Marina Pearl",
         href: "/marina_pearl",

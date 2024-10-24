@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-export default function ProBoxPage() {
+export default function PricingPage() {
   return (
     <>
       <section className="pt-10">

@@ -89,7 +89,7 @@ const navigationHandler = () => {
           >
             <div className="w-full self-center">
               <nav>
-                <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-6 lg:space-y-0 xl:space-x-8">
+                <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-6 lg:space-y-0 xl:space-x-6">
                   {navbarData.map((item) => (
                     <li
                       key={item?.id}
@@ -205,7 +205,7 @@ const navigationHandler = () => {
           </div>
 
           <div className="absolute right-5 top-1/2 z-50 flex -translate-y-1/2 items-center lg:static lg:ml-4 lg:translate-y-0 xl:ml-8">
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-end">{/**
               <button
                 onClick={() => setSearchModalOpen(true)}
                 className="hidden h-10 w-10 items-center justify-center rounded-full text-dark-text dark:text-white sm:flex"
@@ -234,7 +234,7 @@ const navigationHandler = () => {
                     </clipPath>
                   </defs>
                 </svg>
-              </button>
+              </button> */}
 
               <div className="relative flex h-10 w-10 items-center justify-center">
                 <ThemeToggler />

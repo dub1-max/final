@@ -1,20 +1,20 @@
-import Smart_Cabins from "@/components/Smart_Cabins";
+import Go_Biz from "@/components/Go_Biz"
 import { Metadata } from "next";
 
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
-  title: `Smart Cabins | ${siteName}`,
+  title: `Go Biz | ${siteName}`,
   description: "This is Support page for Go Next.js",
   // other metadata
 };
 
-export default function SmartCabinsPage() {
+export default function GoBizPage() {
   return (
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-          <Smart_Cabins />
+          <Go_Biz />
         </div>
       </section>
     </>
