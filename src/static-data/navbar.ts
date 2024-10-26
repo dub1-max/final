@@ -13,13 +13,13 @@ export const navbarData: NavbarItem[] = [
     title: "AboutUs",
     href: "#about",
     external: false,
-  }/*,
+  },
   {
     id: uuid(),
-    title: "Pricing",
+    title: "Gallery",
     href: "#pricing",
     external: false,
-  },
+  }/*,,
   {
     id: uuid(),
     title: "Gallery",
@@ -48,77 +48,27 @@ export const navbarData: NavbarItem[] = [
   ,
   {
     id: uuid(),
-    title: "Garhoud",
+    title: "Locations",
 
     submenu: [
       {
         id: uuid(),
-        title: "Connecting Minds",
-        href: "/connecting_minds",
+        title: "Garhoud",
+        href: "/garhoud-main",
         external: false,
       },
-      {
-        id: uuid(),
-        title: "Pro Box",
-        href: "/pro_box",
-        external: false,
-      }
-    ]
-  },
-  {
-    id: uuid(),
-    title: "Deira",
-
-    submenu: [
-      {
-        id: uuid(),
-        title: "Go Biz",
-        href: "/go_biz",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Biz Space",
-        href: "/biz_space",
-        external: false,
-      }
-    ]
-  },
-  {
-    id: uuid(),
-    title: "SheikhZayed",
-
-    submenu: [
-      {
-        id: uuid(),
-        title: "Marina Pearl",
-        href: "/marina_pearl",
-        external: false,
-      }/*,
       {
         id: uuid(),
         title: "Deira",
-        href: "/deira",
+        href: "/deira-main",
         external: false,
       },
       {
         id: uuid(),
-        title: "Sheikh Zayed",
+        title: "SheikhZayed",
         href: "/marina_pearl",
         external: false,
-      },
-      {
-        id: uuid(),
-        title: "Marina Pearl",
-        href: "/marina_pearl",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Connecting Minds",
-        href: "/connecting_minds",
-        external: false,
-      },*/
+      }
     ]
   },
   {

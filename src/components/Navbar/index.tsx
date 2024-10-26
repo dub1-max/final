@@ -89,7 +89,7 @@ const navigationHandler = () => {
           >
             <div className="w-full self-center">
               <nav>
-                <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-6 lg:space-y-0 xl:space-x-6">
+                <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-6 lg:space-y-0 xl:space-x-10">
                   {navbarData.map((item) => (
                     <li
                       key={item?.id}
