@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import "C:\\Users\\Yash Avsarmal\\Downloads\\final\\src\\styles\\globals.css";
+import '../../styles/globals.css'
+//import '../../../styles/globals.css';
 
 export default function DeiraMain() {
   return (
