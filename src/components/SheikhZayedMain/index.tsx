@@ -1,5 +1,6 @@
 import React from "react";
-import "C:\\Users\\Yash Avsarmal\\Downloads\\final\\src\\styles\\globals.css";
+import Link from "next/link";
+import './style.css'
 
 export default function SheikhZayedMain() {
   return (
@@ -33,9 +34,9 @@ export default function SheikhZayedMain() {
               <p className="mb-4 text-gray-700 dark:text-gray-300">
                 Enjoy the sunlight in this calm spot and come up with a new brilliant idea for your business.
               </p>
-              <button className="rounded bg-blue-600 px-4 py-2 font-semibold text-white transition-colors duration-300 hover:bg-blue-400">
+              <Link href="" className="rounded bg-blue-600 px-4 py-2 font-semibold text-white transition-colors duration-300 hover:bg-blue-400">
                 Enquire Now
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -54,9 +55,9 @@ export default function SheikhZayedMain() {
               <p className="mb-4 text-gray-700 dark:text-gray-300">
                 Enjoy the sunlight in this calm spot and come up with a new brilliant idea for your business.
               </p>
-              <button className="rounded bg-blue-600 px-4 py-2 font-semibold text-white transition-colors duration-300 hover:bg-blue-400">
+              <Link href="" className="rounded bg-blue-600 px-4 py-2 font-semibold text-white transition-colors duration-300 hover:bg-blue-400">
                 Enquire Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>
