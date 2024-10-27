@@ -98,6 +98,9 @@
   .portfolio-btn-wrapper button.active {
     @apply underline;
   }
+
+
+  
 }.blog-page {
   display: flex;
   gap: 20px;
