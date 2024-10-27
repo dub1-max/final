@@ -5,7 +5,7 @@ const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
   title: `Error Page | ${siteName}`,
-  description: "This is Error page for Go Next.js",
+  description: "This is Error page",
   // other metadata
 };
 

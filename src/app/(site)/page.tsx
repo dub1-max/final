@@ -15,7 +15,7 @@ const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
   title: `${siteName}`,
-  description: "Next.js starter for your next - Startup, Business, Agency or SaaS Website. Comes with refreshing design, integrations and everything you need to kickstart your next web project",
+  description: "BusinessCentre offers flexible, professional workspaces in the heart of City Center Deira, tailored for entrepreneurs, startups, and established businesses to thrive.",
 };
 
 export default function Home() {
