@@ -27,7 +27,7 @@ export default function FooterBottom() {
         <div className="w-full px-4 md:w-1/2 lg:w-1/3">
           <div>
             <p className="text-center font-heading text-base text-dark-text lg:text-right">
-              © {new Date().getFullYear()} <b>BusinessCentre. </b>All rights reserved Managed By <b> <a style={{color:"yellow"}}  href="https://satcorp.ae" target="_blank">SATCORP</a></b>
+              © {new Date().getFullYear()} <b>BusinessCentre. All rights reserved Managed by <a href="https://satcorp.ae " target="_blank" > SATCORP </a>   </b>
             </p>
           </div>
         </div>
