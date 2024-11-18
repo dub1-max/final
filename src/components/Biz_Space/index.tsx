@@ -4,36 +4,8 @@ import SectionTitle from "../Common/SectionTitle";
 import SinglePricing from "./SinglePricing";
 export default function Biz_Space() {
   return (
-    <section id="support" className="pt-14 sm:pt-20 lg:pt-[130px]">
-      <div className="px-4 xl:container">
-        <div className="-mx-4 flex flex-wrap justify-center">
-          <div className="w-full px-4 xl:w-10/12">
-            <div className="flex flex-wrap items-center border-b pb-14 dark:border-[#2E333D] lg:pb-0">
-              <div className="w-full px-4 lg:w-1/2">
-                <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
-                  <span className="title !left-0 !translate-x-0">  Biz Space </span>
-                  <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-                    Biz Space
-                  </h2>
-                </div>
-              </div>
-              
-            </div>
-
-            {/* Flexbox container for the two divs */}
-            <div className="w-full flex px-1 lg:w-1/2 justify-between space-x-2">
-
-              <div className="w-1/2 flex flex-nowrap border border-black">
-                {/* Content for first div */}
-              </div>
-              <div className="w-1/2 flex flex-nowrap border border-black">
-                {/* Content for second div */}
-              </div>
-            </div>
-
-           {
-  
-    <section id="pricing" className="pt-14 sm:pt-20 lg:pt-[130px]">
+    <section id="support" className="pt-14 sm:pt-20 lg:pt-[0px]">
+      <section id="pricing" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <SectionTitle
           mainTitle="PRICING PLANS"
@@ -102,7 +74,36 @@ export default function Biz_Space() {
             ))}
         </div>
 
-        <div className="pt-12 text-center">
+      </div>
+    </section>
+    <br />
+  
+      <div className="px-4 xl:container">
+        <div className="-mx-4 flex flex-wrap justify-center">
+          <div className="w-full px-4 xl:w-10/12">
+            <div className="flex flex-wrap items-center border-b pb-14 dark:border-[#2E333D] lg:pb-0">
+              <div className="w-full px-4 lg:w-1/2">
+                <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
+                  <span className="title !left-0 !translate-x-0">  Biz Space </span>
+                  <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
+                    Biz Space
+                  </h2>
+                </div>
+              </div>
+              
+            </div>
+
+            {/* Flexbox container for the two divs */}
+            <div className="w-full flex px-1 lg:w-1/2 justify-between space-x-2">
+
+              <div className="w-1/2 flex flex-nowrap border border-black">
+                {/* Content for first div */}
+              </div>
+              <div className="w-1/2 flex flex-nowrap border border-black">
+                {/* Content for second div */}
+              </div>
+            </div>
+            <div className="pt-12 text-center">
           <h3 className="mb-5 font-heading text-xl font-medium text-dark dark:text-white sm:text-3xl">
             Looking for a company solution?
           </h3>
@@ -113,13 +114,10 @@ export default function Biz_Space() {
             Contact our team to get a quote.
           </Link>
         </div>
-      </div>
-    </section>
-  
 
-            
-
-            /* Google Maps embed */}
+           {
+        
+          /* Google Maps embed */}
             <div
               style={{
                 width: "100%",
