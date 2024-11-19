@@ -1,5 +1,5 @@
 import Connecting_Minds from "@/components/Connecting_Minds";
-import Felxi_Desk from "@/components/Flexi_Desk";
+
 import { Metadata } from "next";
 
 const siteName = process.env.SITE_NAME;

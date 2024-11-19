@@ -17,7 +17,7 @@ export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
     title: "Gallery",
-    href: "#pricing",
+    href: "/carousel",
     external: false,
   }/*,,
   {
