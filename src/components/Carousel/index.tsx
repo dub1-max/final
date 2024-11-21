@@ -1,7 +1,8 @@
-'use client';
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
+import SectionTitle from "../Common/SectionTitle";
 
 interface CarouselProps {
   autoSlide?: boolean;
@@ -16,8 +17,10 @@ export default function Carousel({
 }: CarouselProps) {
   const [curr, setCurr] = useState(0);
 
-  const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
-  const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
+  const prev = () =>
+    setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
+  const next = () =>
+    setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
   useEffect(() => {
     if (!autoSlide) return;
@@ -26,42 +29,76 @@ export default function Carousel({
   }, [autoSlide, autoSlideInterval]);
 
   return (
-    <div className="overflow-hidden relative rounded-md " style={{ borderRadius: '10px', paddingTop: '70px' }}>
+    <div
+      className="relative mx-auto overflow-hidden"
+      style={{
+        paddingTop: "5%",
+        maxWidth: "90%", // Set carousel width to 80% of the screen
+        
+      }}
+      
+    >
+      <a href="#carousel"></a>
+      <SectionTitle
+          mainTitle="Carousel"
+          title="Images in Carousel"
+          paragraph="."
+        />
+      {/* Slider Container */}
       <div
-        className="flex transition-transform ease-out duration-500"
-        style={{ transform: `translateX(-${curr * 100}%)` }}
+      
+        className="flex transition-transform duration-500 ease-out"
+        style={{
+          transform: `translateX(-${curr * 100}%)`, // Move to the current slide
+          width: `${slides.length * 100}%`, // Adjust the container width based on number of slides
+        }}
       >
         {slides.map((img, index) => (
-          <img
+          <div
             key={index}
-            src={img}
-            alt={`Slide ${index + 1}`}
-            className="w-[calc(100%-70px)] h-[450px] object-cover mx-auto"
-          />
+            className="w-full flex-shrink-0"
+            style={{ width: "100%" }} // Each slide takes full width
+          >
+            <img
+            
+              src={img}
+              alt={`Slide ${index + 1}`}
+              className="mx-auto h-[450px] w-full object-cover"
+            />
+          </div>
         ))}
       </div>
 
-      <div className="absolute inset-0 flex items-center justify-between p-4">
+      {/* Navigation Buttons */}
+      <div className="absolute inset-0 flex items-center justify-between px-4"
+      style={{
+        paddingTop: "25%"
+      }}
+      >
         <button
           onClick={prev}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="rounded-full bg-white/90 p-1 text-gray-700 shadow-md hover:bg-gray-100 hover:scale-110 transition-transform duration-200 ease-in-out"
         >
           <ChevronLeft size={40} />
         </button>
         <button
           onClick={next}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="rounded-full bg-white/90 p-1 text-gray-700 shadow-md hover:bg-gray-100 hover:scale-110 transition-transform duration-200 ease-in-out"
         >
           <ChevronRight size={40} />
         </button>
       </div>
 
-      <div className="absolute bottom-4 right-0 left-0">
+      {/* Indicators */}
+      <div className="absolute bottom-4 left-0 right-0">
         <div className="flex items-center justify-center gap-2">
           {slides.map((_, i) => (
             <div
-              key={i} // Add key prop for each indicator
-              className={`transition-all w-3 h-3 bg-white rounded-full ${curr === i ? "p-2" : "bg-opacity-50"}`}
+              key={i}
+              className={`h-3 w-3 rounded-full bg-white transition-all ${
+                curr === i ? "p-2" : "bg-opacity-50"
+              }`}
+              onClick={() => setCurr(i)} // Allow clicking indicators to navigate
             />
           ))}
         </div>

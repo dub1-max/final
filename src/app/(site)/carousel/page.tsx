@@ -1,6 +1,7 @@
 import Carousel from "@/components/Carousel";
 import { Metadata } from "next";
 
+
 const siteName = process.env.SITE_NAME;
 
 const slides = [
@@ -19,9 +20,11 @@ export default function Homecarousel() {
   return (
     <>
       <section className="pt-10">
-      <div>
-        <h1></h1>
-        <Carousel autoSlide={true} autoSlideInterval={5000} slides={slides} />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <div style={{
+        paddingTop: "80px"
+      }}>
+        <Carousel autoSlide={true} autoSlideInterval={6000} slides={slides} />
       </div>
       </section>
     </>
