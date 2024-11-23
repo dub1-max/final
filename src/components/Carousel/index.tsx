@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
 import SectionTitle from "../Common/SectionTitle";
+import Image from "next/image";
 
 interface CarouselProps {
   autoSlide?: boolean;
@@ -59,7 +60,7 @@ export default function Carousel({
             className="w-full flex-shrink-0"
             style={{ width: "100%" }} // Each slide takes full width
           >
-            <img
+            <Image
             
               src={img}
               alt={`Slide ${index + 1}`}
