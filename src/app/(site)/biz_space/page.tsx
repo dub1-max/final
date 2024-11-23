@@ -1,6 +1,13 @@
 import Biz_Space from "@/components/Biz_Space";
-import { Metadata } from "next";
+import CarouselBizSpace from "@/components/CarouselBizSpace";
+import Support from "@/components/Support";
 
+import { Metadata } from "next";
+const slides = [
+  "https://i.ibb.co/ncrXc2V/1.png",
+  "https://i.ibb.co/B3s7v4h/2.png",
+  "https://i.ibb.co/XXR8kzF/3.png"
+  ];
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
@@ -14,7 +21,9 @@ export default function BizSpacePage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
+          <CarouselBizSpace autoSlide={true} autoSlideInterval={6000} slides={slides} />
           <Biz_Space />
+          <Support />
         </div>
       </section>
     </>

@@ -12,7 +12,7 @@ export default function Support() {
                     Business Center In Dubai{" "}
                   </span>
                   <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-                    Get in Touch for any kind of Service Office Spaces
+                    Get in Touch for any kind of Office Spaces
                   </h2>
                   <p className="text-base text-dark-text">
                     You may contact us by filling in this form any time you need
@@ -63,7 +63,7 @@ export default function Support() {
               ></iframe>
             </div>*/}
 
-            <div className="ml-auto w-full px-4 lg:w-1/2">
+            {/*<div className="ml-auto w-full px-4 lg:w-1/2">
               <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
                 <span className="title left-1000 !translate-x-0">
                   {" "}
@@ -74,7 +74,7 @@ export default function Support() {
                 </h2>
               </div>
             </div>
-            <br />
+            <br />*/}
 
             <div
               style={{

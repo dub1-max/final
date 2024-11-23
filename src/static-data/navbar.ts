@@ -16,8 +16,8 @@ export const navbarData: NavbarItem[] = [
   },
   {
     id: uuid(),
-    title: "Carousel",
-    href: "#carousel",
+    title: "Gallery",
+    href: "#portfolio",
     external: false,
   }/*,,
   {
@@ -66,7 +66,7 @@ export const navbarData: NavbarItem[] = [
       {
         id: uuid(),
         title: "SheikhZayed",
-        href: "/marina_pearl",
+        href: "/sheikhzayedmain",
         external: false,
       }
     ]

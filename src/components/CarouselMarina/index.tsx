@@ -10,7 +10,7 @@ interface CarouselProps {
   slides: string[]; // Array of image URLs (strings)
 }
 
-export default function Carousel({
+export default function CarouselMarina({
   autoSlide = false,
   autoSlideInterval = 3000,
   slides,
@@ -40,8 +40,8 @@ export default function Carousel({
     >
       <a href="#carousel"></a>
       <SectionTitle
-          mainTitle="Connecting Minds"
-          title="Connecting Minds"
+          mainTitle="MarinaPearl"
+          title="Marina Pearl"
           paragraph=""
         />
       {/* Slider Container */}

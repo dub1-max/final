@@ -74,7 +74,7 @@ export default function Desk_Space() {
             ))}
         </div>
 
-        <div className="pt-12 text-center">
+        {/*<div className="pt-12 text-center">
           <h3 className="mb-5 font-heading text-xl font-medium text-dark dark:text-white sm:text-3xl">
             Looking for a company solution?
           </h3>
@@ -84,7 +84,7 @@ export default function Desk_Space() {
           >
             Contact our team to get a quote.
           </Link>
-        </div>
+        </div>*/}
       </div>
     </section>
   );

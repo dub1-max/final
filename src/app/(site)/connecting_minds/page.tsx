@@ -1,5 +1,11 @@
+import Carousel from "@/components/Carousel";
 import Connecting_Minds from "@/components/Connecting_Minds";
-
+import Support from "@/components/Support";
+const slides = [
+  "https://i.ibb.co/ncrXc2V/1.png",
+  "https://i.ibb.co/B3s7v4h/2.png",
+  "https://i.ibb.co/XXR8kzF/3.png"
+  ];
 import { Metadata } from "next";
 
 const siteName = process.env.SITE_NAME;
@@ -15,7 +21,9 @@ export default function ConnectingMindsPage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
+          <Carousel slides={slides}/>
           <Connecting_Minds />
+          <Support/>
         </div>
       </section>
     </>
