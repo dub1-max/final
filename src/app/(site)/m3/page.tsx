@@ -1,20 +1,28 @@
 import M3_Portfolio from "@/components/Home/M3_Portfolio";
+import Support from "@/components/Support";
+import Maps from "@/components/Maps";
+import mapConfig from "@/static-data/mapConfig";
 import { Metadata } from "next";
+import FeaturesMeeting from "@/components/Home/FeaturesMeeting";
+
 
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
-  title: `Flexi Desk | ${siteName}`,
+  title: `MeetingRoom | ${siteName}`,
   description: "This is Support page",
   // other metadata
 };
 
-export default function FlexiDeskPage() {
+export default function MeetingRooM3Page() {
   return (
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
         <M3_Portfolio/>
+        <FeaturesMeeting/>
+        <Maps googleMapUrl={mapConfig.googleMapUrl3} />
+        <Support/>
         </div>
       </section>
     </>

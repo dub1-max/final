@@ -20,22 +20,21 @@ export default function Navbar() {
 
   const pathUrl = usePathname();
 
-const navigationHandler = () => {
-  // Toggle the navigation state
-  const newNavigationOpenState = !navigationOpen;
-  setNavigationOpen(newNavigationOpenState);
+  const navigationHandler = () => {
+    // Toggle the navigation state
+    const newNavigationOpenState = !navigationOpen;
+    setNavigationOpen(newNavigationOpenState);
 
-  if (typeof window !== "undefined") {
-    // If the navigation is opening, add the overflow-hidden class to the body
-    if (newNavigationOpenState) {
-      document.body.classList.add("max-lg:overflow-hidden");
-    } else {
-      // If the navigation is closing, remove the overflow-hidden class
-      document.body.classList.remove("max-lg:overflow-hidden");
+    if (typeof window !== "undefined") {
+      // If the navigation is opening, add the overflow-hidden class to the body
+      if (newNavigationOpenState) {
+        document.body.classList.add("max-lg:overflow-hidden");
+      } else {
+        // If the navigation is closing, remove the overflow-hidden class
+        document.body.classList.remove("max-lg:overflow-hidden");
+      }
     }
-  }
-};
-
+  };
 
   // Sticky menu
   const handleStickyMenu = () => {
@@ -64,7 +63,7 @@ const navigationHandler = () => {
       <header
         className={`header absolute left-0 top-0 w-full animate-fadeIn delay-[1500ms] ${stickyMenu ? "sticky-navbar" : ""}`}
       >
-        <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-10">
+        <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-12"> {/** size of navbar */}
           <div className="relative z-[99] max-w-[250px] pr-4 lg:w-full lg:max-w-[220px] xl:max-w-[280px]">
             <Link href="/" className="inline-block">
               <Image
@@ -89,7 +88,7 @@ const navigationHandler = () => {
           >
             <div className="w-full self-center">
               <nav>
-                <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-6 lg:space-y-0 xl:space-x-10">
+                <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-6 lg:space-y-0 xl:space-x-12"> {/** adjecting space in navbar */}
                   {navbarData.map((item) => (
                     <li
                       key={item?.id}
@@ -106,7 +105,7 @@ const navigationHandler = () => {
                                   : "/"
                               : "/"
                           }
-                          target={item?.external ? "_blank" : ""}
+                          target={item?.external ? "" : ""}
                           onClick={navigationHandler}
                           className={`${pathUrl === item?.href ? "active" : ""} inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white ${item?.href?.startsWith("#") ? "menu-scroll" : ""}`}
                         >
@@ -146,10 +145,7 @@ const navigationHandler = () => {
                                   </Link>
                                 </li>
                               ))}
-                            </ul>/***  */
-
-
-
+                            </ul> /***  */
                           )}
                         </>
                       )}
@@ -157,7 +153,6 @@ const navigationHandler = () => {
                   ))}
                 </ul>
               </nav>
-
             </div>
             {/** <div className="absolute bottom-0 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0">
               session ? (
@@ -190,22 +185,21 @@ const navigationHandler = () => {
                   </Link> 
                 </>
               )*/}
-              <div className="absolute bottom-20 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0">
-                <>
-                  <Link
-                    href="/support"
-                    className="w-full whitespace-nowrap rounded bg-primary px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
-                  >
-                    Contact Us
-                  </Link>
-                  
-                </>
-
+            <div className="absolute bottom-20 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0">
+              <>
+                <Link
+                  href="/support"
+                  className="w-full whitespace-nowrap rounded bg-primary px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
+                >
+                  Contact Us
+                </Link>
+              </>
             </div>
           </div>
 
           <div className="absolute right-5 top-1/2 z-50 flex -translate-y-1/2 items-center lg:static lg:ml-4 lg:translate-y-0 xl:ml-8">
-            <div className="flex items-center justify-end">{/**
+            <div className="flex items-center justify-end">
+              {/**
               <button
                 onClick={() => setSearchModalOpen(true)}
                 className="hidden h-10 w-10 items-center justify-center rounded-full text-dark-text dark:text-white sm:flex"

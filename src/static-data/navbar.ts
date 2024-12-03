@@ -90,6 +90,14 @@ export const navbarData: NavbarItem[] = [
       }
     ]
   },
+
+  {
+    id: uuid(),
+    title: "MeetingRooms",
+    href: "/meetroom_main",
+    external: true,
+  },
+
   {
     id: uuid(),
     title: "Offices",
@@ -116,32 +124,7 @@ export const navbarData: NavbarItem[] = [
      
     ]
   },
-  {
-    id: uuid(),
-    title: "MeetingRooms",
-
-    submenu: [
-      {
-        id: uuid(),
-        title: "Meet1",
-        href: "/m1",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Meet2",
-        href: "/m2",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Meet3",
-        href: "/m3",
-        external: false,
-      },
-      
-    ]
-  },
+  
 
  /* {
     id: uuid(),
