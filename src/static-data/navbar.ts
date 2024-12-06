@@ -74,21 +74,8 @@ export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
     title: "CoWorking",
-
-    submenu: [
-      {
-        id: uuid(),
-        title: "Flexi Desk",
-        href: "/flexi_desk",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Desk Space",
-        href: "/desk_space",
-        external: false,
-      }
-    ]
+    href: "/coworking",
+    external: true,
   },
 
   {
