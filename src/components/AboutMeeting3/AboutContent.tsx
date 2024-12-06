@@ -7,12 +7,12 @@ import TabPanel from "./TabPanel";
 const tabButtons = [
   {
     id: uuid(),
-    title: "About Us",
+    title: "Meeting Rooms",
     value: "about",
   },
   {
     id: uuid(),
-    title: "Our Mission",
+    title: "Benefits",
     value: "mission",
   },
   {
@@ -49,23 +49,20 @@ export default function AboutContent() {
         {/* About Tab */}
         {activeTab === "about" && (
           <TabPanel
-            title="BusinessCentre"
+            title="Experience Luxury: Meeting Room Rentals"
             image1="/images/about/image-1.jpg"
             image1Alt="About Image 1"
             image2="/images/about/image-2.jpg"
             image2Alt="About Image 2"
           >
             <p className="mb-6 text-base text-dark-text">
-              At <b>BusinessCentre</b>, we recognize that modern businesses need flexibility
-              and professionalism in their work environments. Our business center is
-              designed to meet the evolving needs of today&aposs entrepreneurs and companies.
+            Elevate your corporate image and leave a lasting impression with our cutting-edge meeting rooms! Designed to exude sophistication and luxury, our spaces are fully equipped and perfect for private meetings, powerful presentations, engaging training sessions, VIP gatherings, exclusive events, 
             </p>
             <p className="mb-6 text-base text-dark-text">
-              Located in the vibrant City Center Deira, our space offers a prime location for startups and established 
-              enterprises alike. You&aposll find everything you need to thrive right at your doorstep.
+            and more – all starting at just AED 165??/hour.
             </p>
             <p className="text-base text-dark-text">
-              Whether you&aposre launching a new idea or managing an established business, <b>BusinessCentre</b> provides the perfect setting to help you succeed. Join us and elevate your work experience!
+            Enjoy the flexibility to book by the hour or the day, tailored to your specific business needs, and choose from a wide array of options to suit your requirements!
             </p>
           </TabPanel>
         )}
@@ -73,7 +70,7 @@ export default function AboutContent() {
         {/* Mission Tab */}
         {activeTab === "mission" && (
           <TabPanel
-            title="Why Choose BusinessCentre?"
+            title="Benefits Of Renting A Meeting Room"
             image1="/images/about/image-1.jpg"
             image1Alt="Mission Image 1"
             image2="/images/about/image-2.jpg"
@@ -81,14 +78,16 @@ export default function AboutContent() {
             leftContent
           >
             <p className="mb-6 text-base text-dark-text">
-              <b>Flexibility:</b> We understand that flexibility is key in the business
-              world. Choose a plan that suits your unique requirements, whether
-              it&aposs a private office, virtual office, or a flexible desk.
+              <b> Professional Reception:</b> Our welcoming team is dedicated to making your guests feel at
+               home from the moment they arrive.
               <br />
               <br />
               <b>State-of-the-Art Facilities:</b> Our business center is equipped with
               the latest technology, ergonomic furniture, and modern amenities
               to enhance your work experience.
+              <br />
+              <br />
+              <b>Effortless Booking:</b> Choose the booking option that suits your schedule, whether by the hour or for the entire day.
               <br />
               <br />
               <b>Professional Support:</b> Our dedicated team is committed to
