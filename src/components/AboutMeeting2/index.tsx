@@ -7,7 +7,7 @@ export default function AboutMeeting2() {
       <div className="px-4 xl:container">
         <SectionTitle
           mainTitle="ABOUT US"
-          title="Know Details About Our Company"
+          title="meeting 2"
           paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
         />
 
