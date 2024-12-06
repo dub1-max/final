@@ -4,6 +4,7 @@ import Maps from "@/components/Maps";
 import mapConfig from "@/static-data/mapConfig";
 import { Metadata } from "next";
 import FeaturesMeeting from "@/components/Home/FeaturesMeeting";
+import AboutMeeting3 from "@/components/AboutMeeting3";
 
 
 const siteName = process.env.SITE_NAME;
@@ -20,6 +21,7 @@ export default function MeetingRooM3Page() {
       <section className="pt-10">
         <div className="px-4 xl:container">
         <M3_Portfolio/>
+        <AboutMeeting3/>
         <FeaturesMeeting/>
         <Maps googleMapUrl={mapConfig.googleMapUrl3} />
         <Support/>
