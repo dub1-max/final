@@ -1,7 +1,7 @@
 import SectionTitle from "../Common/SectionTitle";
 import AboutContent from "./AboutContent";
 
-export default function AboutMeeting1() {
+export default function AboutMeeting3() {
   return (
     <section id="about" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
