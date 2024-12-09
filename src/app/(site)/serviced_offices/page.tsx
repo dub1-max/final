@@ -1,3 +1,4 @@
+import AboutServiced from "@/components/AboutServiced";
 import CarouselServicedOffice from "@/components/CarouselServicedOffice";
 import Serviced_Offices from "@/components/Serviced_Offices";
 import Support from "@/components/Support";
@@ -22,6 +23,7 @@ export default function ServicedOfficesPage() {
       <section className="pt-10">
         <div className="px-4 xl:container">
         <CarouselServicedOffice autoSlide={true} autoSlideInterval={6000} slides={slides} />
+        <AboutServiced/>
           <Serviced_Offices />
           <Support/>
         </div>

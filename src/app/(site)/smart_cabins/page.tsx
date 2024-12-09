@@ -2,6 +2,7 @@ import Smart_Cabins from "@/components/Smart_Cabins";
 import { Metadata } from "next";
 import CarouselSmartCabin from "@/components/CarouselSmartCabin";
 import Support from "@/components/Support";
+import AboutSmart from "@/components/AboutSmart";
 const siteName = process.env.SITE_NAME;
 const slides = [
   "https://i.ibb.co/ncrXc2V/1.png",
@@ -25,7 +26,7 @@ export default function SmartCabinsPage() {
             autoSlideInterval={6000}
             slides={slides}
           />
-
+          <AboutSmart/>
           <Smart_Cabins />
           <Support />
         </div>
