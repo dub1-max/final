@@ -7,7 +7,7 @@ export default function AboutSmart() {
       <div className="px-4 xl:container">
         <SectionTitle
           mainTitle="ABOUT US"
-          title="Meeting Rooms"
+          title="Smart Cabins"
           paragraph=""
         />
 

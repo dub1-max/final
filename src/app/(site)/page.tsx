@@ -28,7 +28,7 @@ export default function Home() {
       {/** <Carousel slides={slides}/>
       <Team />*/}
       <Portfolio />
-      <Testimonials />
+      {/*<Testimonials />*/}
       <Brands />
       {/*<Pricing />*/}
       <HomeBlogSection />

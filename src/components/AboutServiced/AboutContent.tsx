@@ -7,7 +7,7 @@ import TabPanel from "./TabPanel";
 const tabButtons = [
   {
     id: uuid(),
-    title: "Meeting Rooms",
+    title: "Serviced Offices",
     value: "about",
   },
   {
@@ -56,7 +56,7 @@ export default function AboutContent() {
             image2Alt="About Image 2"
           >
             <p className="mb-6 text-base text-dark-text">
-            Elevate your corporate image and leave a lasting impression with our cutting-edge meeting rooms! Designed to exude sophistication and luxury, our spaces are fully equipped and perfect for private meetings, powerful presentations, engaging training sessions, VIP gatherings, exclusive events, 
+            Elevate your corporate image and leave a lasting impression with our cutting-edge Serviced Offices! Designed to exude sophistication and luxury, our spaces are fully equipped and perfect for private meetings, powerful presentations, engaging training sessions, VIP gatherings, exclusive events, 
             </p>
             <p className="mb-6 text-base text-dark-text">
             and more – all starting at just AED 165??/hour.
@@ -70,7 +70,7 @@ export default function AboutContent() {
         {/* Mission Tab */}
         {activeTab === "mission" && (
           <TabPanel
-            title="Benefits Of Renting A Meeting Room"
+            title="Benefits Of Renting A Serviced Office"
             image1="/images/about/image-1.jpg"
             image1Alt="Mission Image 1"
             image2="/images/about/image-2.jpg"

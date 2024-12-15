@@ -7,7 +7,7 @@ import TabPanel from "./TabPanel";
 const tabButtons = [
   {
     id: uuid(),
-    title: "Meeting Rooms",
+    title: "Private Offices",
     value: "about",
   },
   {
@@ -49,7 +49,7 @@ export default function AboutContent() {
         {/* About Tab */}
         {activeTab === "about" && (
           <TabPanel
-            title="Experience Luxury: Meeting Room Rentals"
+            title="Experience Luxury: Private Offices Rentals"
             image1="/images/about/image-1.jpg"
             image1Alt="About Image 1"
             image2="/images/about/image-2.jpg"
@@ -70,7 +70,7 @@ export default function AboutContent() {
         {/* Mission Tab */}
         {activeTab === "mission" && (
           <TabPanel
-            title="Benefits Of Renting A Meeting Room"
+            title="Benefits Of Renting A Private Office"
             image1="/images/about/image-1.jpg"
             image1Alt="Mission Image 1"
             image2="/images/about/image-2.jpg"

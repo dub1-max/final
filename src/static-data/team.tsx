@@ -1,7 +1,7 @@
 import { Team } from "@/types/team";
 import { v4 as uuid } from "uuid";
 
-export const teamData: Team[] = [
+export const teamData: Team[] = [/*
   {
     id: uuid(),
     name: "Olivia Andrium",
@@ -71,4 +71,4 @@ export const teamData: Team[] = [
       },
     ],
   },
-];
+*/];
