@@ -1,4 +1,4 @@
-import AboutMeeting1 from "@/components/AboutMeeting1";
+import AboutDeskSpace from "@/components/AboutDeskSpace";
 import Desk_Space from "@/components/Desk_Space";
 import FeaturesMeeting from "@/components/Home/FeaturesMeeting";
 import Maps from "@/components/Maps";
@@ -19,7 +19,7 @@ export default function DeskSpacePage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-          <AboutMeeting1 />
+          <AboutDeskSpace />
           {/** change this after */}
           <FeaturesMeeting />
           <Desk_Space />
