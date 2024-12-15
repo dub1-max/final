@@ -3,6 +3,7 @@ import AboutContent from "./AboutContent";
 
 export default function About() {
   return (
+    
     <section id="about" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <SectionTitle

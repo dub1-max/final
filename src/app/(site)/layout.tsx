@@ -1,5 +1,5 @@
-"use client";
 
+"use client";
 // Import necessary components and dependencies
 import Footer from "@/components/Footer"; // Footer component for the page
 import Navbar from "@/components/Navbar"; // Navbar component for navigation

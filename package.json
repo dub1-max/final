@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "push": "git add . && git commit -m \"Auto commit\" && git push origin main"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",

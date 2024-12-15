@@ -12,7 +12,7 @@ import Support from "@/components/Support";
 import Team from "@/components/Team";
 import { Metadata } from "next";
 import { Sliders } from "react-feather";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
