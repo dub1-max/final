@@ -13,6 +13,7 @@ import Team from "@/components/Team";
 import { Metadata } from "next";
 import { Sliders } from "react-feather";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react"
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <>
     <SpeedInsights/>
+    <Analytics/>
       <Hero />
       <Features />
       <About />
