@@ -5,12 +5,12 @@ const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
   title: `Features | ${siteName}`,
-  description: "This is Support page",
+  description: "This is Features page",
   // other metadata
   // feature component is only for testing purpose
 };
 
-export default function SupportPage() {
+export default function FeaturePage() {
   return (
     <>
       <section className="pt-10">
