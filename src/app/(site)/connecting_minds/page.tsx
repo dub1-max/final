@@ -23,6 +23,7 @@ export default function ConnectingMindsPage() {
         <div className="px-4 xl:container">
           <Carousel slides={slides}/>
           <Connecting_Minds />
+          
           <Support/>
         </div>
       </section>

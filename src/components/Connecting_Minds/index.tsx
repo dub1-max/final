@@ -79,7 +79,7 @@ export default function Connecting_Minds() {
       <div className="px-4 xl:container">
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 xl:w-10/12">
-{     /*       <div className="flex flex-wrap items-center border-b pb-14 dark:border-[#2E333D] lg:pb-0">
+            {/*       <div className="flex flex-wrap items-center border-b pb-14 dark:border-[#2E333D] lg:pb-0">
               <div className="w-full px-4 lg:w-1/2">
                 <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
                   <span className="title !left-0 !translate-x-0">
@@ -112,6 +112,21 @@ export default function Connecting_Minds() {
               >
                 Contact our team to get a quote.
               </Link>
+            </div>
+
+            <div>
+              <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/businessspaces2/appointment?hide_gdpr_banner=1&primary_color=12ac40"
+                style={{
+                  minWidth:"320px",
+                  height:"700px"}}
+              ></div>
+              <script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              ></script>
             </div>
 
             {/* Google Maps embed */}
@@ -225,7 +240,6 @@ export default function Connecting_Minds() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
