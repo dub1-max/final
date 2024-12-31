@@ -120,7 +120,8 @@ export default function Connecting_Minds() {
                 data-url="https://calendly.com/businessspaces2/appointment?hide_gdpr_banner=1&primary_color=12ac40"
                 style={{
                   minWidth:"320px",
-                  height:"700px"}}
+                  height:"700px",
+                background:"transparent"}}
               ></div>
               <script
                 type="text/javascript"
