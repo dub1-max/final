@@ -114,20 +114,21 @@ export default function Connecting_Minds() {
               </Link>
             </div>
 
-            <div
-              className="calendly-inline-widget"
-              data-url="https://calendly.com/businessspaces2/appointment?hide_gdpr_banner=1&primary_color=12ac40"
-              style={{
-                minWidth: "320px",
-                height: "700px",
-                background: "transparent",
-              }}
-            ></div>
-            <script
-              type="text/javascript"
-              src="https://assets.calendly.com/assets/external/widget.js"
-              async
-            ></script>
+            
+              <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/businessspaces2/appointment?hide_gdpr_banner=1&primary_color=12ac40"
+                style={{
+                  minWidth:"320px",
+                  height:"700px",
+                background:"transparent"}}
+              ></div>
+              <script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              ></script>
+            
 
             {/* Google Maps embed */}
             <div
