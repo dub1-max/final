@@ -1,7 +1,20 @@
 import Link from "next/link";
+import Features from "@/components/Home/Features";
+import { Metadata } from "next";
+const siteName = process.env.SITE_NAME;
+
 import { pricingData } from "../../../stripe/pricingData";
 import SectionTitle from "../Common/SectionTitle";
 import SinglePricing from "./SinglePricing";
+export const metadata: Metadata = {
+  title: `Features | ${siteName}`,
+  description: "This is Features page",
+  // other metadata
+  // feature component is only for testing purpose
+};
+
+
+
 export default function Connecting_Minds() {
   return (
     <section id="support" className="pt-14 sm:pt-20 lg:pt-[0px]">
@@ -76,6 +89,12 @@ export default function Connecting_Minds() {
         </div>
       </section>
 
+      <section className="pt-10">
+        <div className="px-4 xl:container">
+          <Features />
+        </div>
+      </section>
+
       <div className="px-4 xl:container">
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 xl:w-10/12">
@@ -114,21 +133,6 @@ export default function Connecting_Minds() {
               </Link>
             </div>
 
-            
-              <div
-                className="calendly-inline-widget"
-                data-url="https://calendly.com/businessspaces2/appointment?hide_gdpr_banner=1&primary_color=12ac40"
-                style={{
-                  minWidth:"320px",
-                  height:"700px",
-                background:"transparent"}}
-              ></div>
-              <script
-                type="text/javascript"
-                src="https://assets.calendly.com/assets/external/widget.js"
-                async
-              ></script>
-            
 
             {/* Google Maps embed */}
             <div

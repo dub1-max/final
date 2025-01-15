@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Features from "@/components/Home/Features";
+import { Metadata } from "next";
+const siteName = process.env.SITE_NAME;
 import { pricingData } from "../../../stripe/pricingData";
 import SectionTitle from "../Common/SectionTitle";
 import SinglePricing from "./SinglePricing";
@@ -77,6 +80,11 @@ export default function Biz_Space() {
       </div>
     </section>
     <br />
+    <section className="pt-10">
+            <div className="px-4 xl:container">
+              <Features />
+            </div>
+          </section>
   
       <div className="px-4 xl:container">
         <div className="-mx-4 flex flex-wrap justify-center">
