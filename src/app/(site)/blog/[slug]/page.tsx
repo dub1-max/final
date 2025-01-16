@@ -105,7 +105,7 @@ export default async function BlogSlugPage({ params }: Props) {
               <div className="-mx-5 flex flex-wrap items-center justify-center">
                 <div className="flex items-center px-5">
                   <div className="mr-4 h-10 w-10 overflow-hidden rounded-full">
-                    <img
+                    <Image
                       src={
                         post?.author?.image
                           ? imageBuilder(post?.author?.image as any).url()
