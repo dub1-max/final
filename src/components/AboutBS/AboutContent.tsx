@@ -65,7 +65,7 @@ export default function AboutContent() {
               enterprises alike. You&aposll find everything you need to thrive right at your doorstep.
             </p>
             <p className="text-base text-dark-text">
-              Whether you're launching a new idea or managing an established business, <b>BizSpace</b> provides the perfect setting to help you succeed. Join us and elevate your work experience!
+              Whether you are launching a new idea or managing an established business, <b>BizSpace</b> provides the perfect setting to help you succeed. Join us and elevate your work experience!
             </p>
           </TabPanel>
         )}
