@@ -23,7 +23,7 @@ export default function DeiraMain() {
           {/* Blog Card 1 */}
           <div className="mx-auto transform overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" style={{ boxShadow:
               "0 8px 20px 0px rgba(0, 48, 241, 0.5), 0 8px 40px 0px rgba(5, 230, 238, 0.5)" }}>
-            <Image
+            <img
               className="h-48 w-full object-cover rounded-t-lg"
               src="https://i.postimg.cc/fbxfQChM/connecting-minds.jpg"
               alt="Blog 1"
@@ -44,7 +44,7 @@ export default function DeiraMain() {
           {/* Blog Card 2 */}
           <div className="mx-auto transform overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" style={{ boxShadow:
               "0 8px 20px 0px rgba(0, 48, 241, 0.5), 0 8px 40px 0px rgba(5, 230, 238, 0.5)" }}>
-            <Image
+            <img
               className="h-48 w-full object-cover rounded-t-lg"
               src="https://i.postimg.cc/fbxfQChM/connecting-minds.jpg"
               alt="Blog 2"

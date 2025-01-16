@@ -17,7 +17,7 @@ function CustomHits(props: any) {
               <div
                 className={`relative h-[60px] w-[106px] overflow-hidden rounded-lg `}
               >
-                <Image
+                <img
                   src={hit.imageURL}
                   alt={hit.title}
                   layout="fill"

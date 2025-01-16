@@ -60,7 +60,7 @@ export default function Carousel({
             className="w-full flex-shrink-0"
             style={{ width: "100%" }} // Each slide takes full width
           >
-            <Image
+            <img
             
               src={img}
               alt={`Slide ${index + 1}`}

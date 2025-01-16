@@ -21,12 +21,12 @@ export default function Brands() {
                   href="#"
                   className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
                 >
-                  <Image
+                  <img
                     src="./images/brands/uideck.svg"
                     alt="UIDeck"
                     className="hidden h-10 w-full dark:block"
                   />
-                  <Image
+                  <img
                     src="./images/brands/uideck-2.svg"
                     alt="UIDeck"
                     className="h-10 w-full dark:hidden"
@@ -37,12 +37,12 @@ export default function Brands() {
                   href="#"
                   className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
                 >
-                  <Image
+                  <img
                     src="./images/brands/tailadmin.svg"
                     alt="TailAdmin"
                     className="hidden h-10 w-full dark:block"
                   />
-                  <Image
+                  <img
                     src="./images/brands/tailadmin-2.svg"
                     alt="TailAdmin"
                     className="h-10 w-full dark:hidden"
@@ -53,12 +53,12 @@ export default function Brands() {
                   href="#"
                   className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
                 >
-                  <Image
+                  <img
                     src="./images/brands/graygrids.svg"
                     alt="GrayGrids"
                     className="hidden h-10 w-full dark:block"
                   />
-                  <Image
+                  <img
                     src="./images/brands/graygrids-2.svg"
                     alt="GrayGrids"
                     className="h-10 w-full dark:hidden"
@@ -69,12 +69,12 @@ export default function Brands() {
                   href="#"
                   className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
                 >
-                  <Image
+                  <img
                     src="./images/brands/lineicons.svg"
                     alt="LineIcons"
                     className="hidden h-10 w-full dark:block"
                   />
-                  <Image
+                  <img
                     src="./images/brands/lineicons-2.svg"
                     alt="LineIcons"
                     className="h-10 w-full dark:hidden"
@@ -85,12 +85,12 @@ export default function Brands() {
                   href="#"
                   className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
                 >
-                  <Image
+                  <img
                     src="./images/brands/plainadmin.svg"
                     alt="PlainAdmin"
                     className="hidden h-10 w-full dark:block"
                   />
-                  <Image
+                  <img
                     src="./images/brands/plainadmin-2.svg"
                     alt="PlainAdmin"
                     className="h-10 w-full dark:hidden"
