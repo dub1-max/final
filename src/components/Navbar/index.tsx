@@ -63,7 +63,7 @@ export default function Navbar() {
       <header
         className={`header absolute left-0 top-0 w-full animate-fadeIn delay-[1500ms] ${stickyMenu ? "sticky-navbar" : ""}`}
       >
-        <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-12"> {/** size of navbar */}
+        <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-10"> {/** size of navbar */}
           <div className="relative z-[99] max-w-[250px] pr-4 lg:w-full lg:max-w-[220px] xl:max-w-[280px]">
             <Link href="/" className="inline-block">
               <Image
