@@ -27,6 +27,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/utils/scrollActive.js"
-  ],
+, "src/components/CarouselComponent/index.jsx"  ],
   "exclude": ["node_modules"]
 }

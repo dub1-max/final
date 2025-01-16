@@ -2,7 +2,6 @@ import Marina_pearl from "@/components/Marina_pearl";
 import { Metadata } from "next";
 import CarouselMarina from "@/components/CarouselMarina";
 import Support from "@/components/Support";
-import AboutMP from "@/components/AboutMP";
 
 
 const siteName = process.env.SITE_NAME;
@@ -26,7 +25,6 @@ export default function MarinaPearlPage() {
       <section className="pt-10">
         <div className="px-4 xl:container">
         <CarouselMarina autoSlide={true} autoSlideInterval={6000} slides={slides} />
-        <AboutMP/>
           <Marina_pearl />
           <Support/>
         </div>

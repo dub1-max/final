@@ -2,7 +2,6 @@ import Pro_Box from "@/components/Pro_Box";
 import CarouselProBox from "@/components/CarouselProBox";
 import { Metadata } from "next";
 import Support from "@/components/Support";
-import AboutPB from "@/components/AboutPB";
 
 const siteName = process.env.SITE_NAME;
 const slides = [
@@ -24,7 +23,6 @@ export default function ProBoxPage() {
       <section className="pt-10">
         <div className="px-4 xl:container">
           <CarouselProBox autoSlide={true} autoSlideInterval={6000} slides={slides} />
-          <AboutPB/>
           <Pro_Box />
           <Support/>
         </div>

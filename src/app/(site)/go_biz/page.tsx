@@ -2,7 +2,6 @@ import CarouselGoBiz from "@/components/CarouselGoBiz";
 import Go_Biz from "@/components/Go_Biz"
 import { Metadata } from "next";
 import Support from "@/components/Support";
-import AboutGB from "@/components/AboutGB";
 
 const siteName = process.env.SITE_NAME;
 const slides = [
@@ -23,7 +22,6 @@ export default function GoBizPage() {
       <section className="pt-10">
         <div className="px-4 xl:container">
         <CarouselGoBiz autoSlide={true} autoSlideInterval={6000} slides={slides} />
-        <AboutGB/>
           <Go_Biz />
           <Support/>
         </div>
