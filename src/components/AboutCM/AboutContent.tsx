@@ -101,7 +101,7 @@ export default function AboutContent() {
         {/* Vision Tab */}
         {activeTab === "vision" && (
           <TabPanel
-            title="What's Our Vision in ConnectingMinds?"
+            title="What is Our Vision in ConnectingMinds?"
             image1="/images/about/image-1.jpg"
             image1Alt="Vision Image 1"
             image2="/images/about/image-2.jpg"
