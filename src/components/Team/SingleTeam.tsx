@@ -6,7 +6,7 @@ export default function SingleTeam({ team }: { team: Team }) {
     <div className="w-full px-4 md:w-1/2 lg:w-1/4">
       <div className="group mx-auto mb-10 max-w-[300px] text-center xs:max-w-[370px]">
         <div className="relative mb-8 aspect-[360/370] overflow-hidden rounded">
-          <Image src={team?.image} alt={team?.name} fill className="w-full" />
+          <img src={team?.image} alt={team?.name} fill className="w-full" />
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 translate-y-10 opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
             <div className="flex items-center justify-center space-x-3">
               {team?.socialLinks.map((social) => (

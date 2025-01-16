@@ -80,7 +80,7 @@ export default function Hero() {
           <div className="w-full px-4 lg:w-1/2">
             <div className="wow fadeInRight relative z-30 mx-auto h-[560px] w-full max-w-[700px] lg:ml-0">
               <div className="absolute right-0 top-0 lg:w-11/12">
-                <Image
+                <img
                   src="/images/hero/image-2.jpg"
                   alt="hero-image"
                   width={560}
@@ -88,7 +88,7 @@ export default function Hero() {
                 />
               </div>
               <div className="absolute bottom-0 left-0 z-10">
-                <Image
+                <img
                   src="/images/hero/image-1.jpg"
                   alt="hero-image"
                   width={350}
