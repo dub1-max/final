@@ -8,7 +8,7 @@ export default function AboutCM() {
       <div className="px-4 xl:container">
         <SectionTitle
           mainTitle="ABOUT US"
-          title="Know Details About Our Company"
+          title="Connecting Minds"
           paragraph=""        />
 
         <div className=" relative z-10 overflow-hidden rounded px-8 pb-8 pt-0 md:px-[70px] md:pb-[70px] lg:px-[60px] lg:pb-[60px] xl:px-[70px] xl:pb-[70px]">

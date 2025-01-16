@@ -65,7 +65,7 @@ export default function AboutContent() {
               enterprises alike. You&aposll find everything you need to thrive right at your doorstep.
             </p>
             <p className="text-base text-dark-text">
-              Whether you&aposre launching a new idea or managing an established business, <b>BusinessCentre</b> provides the perfect setting to help you succeed. Join us and elevate your work experience!
+              Whether you're launching a new idea or managing an established business, <b>BusinessCentre</b> provides the perfect setting to help you succeed. Join us and elevate your work experience!
             </p>
           </TabPanel>
         )}
@@ -101,7 +101,7 @@ export default function AboutContent() {
         {/* Vision Tab */}
         {activeTab === "vision" && (
           <TabPanel
-            title="What&aposs Our Vision in BusinessCentre?"
+            title="What's Our Vision in BusinessCentre?"
             image1="/images/about/image-1.jpg"
             image1Alt="Vision Image 1"
             image2="/images/about/image-2.jpg"

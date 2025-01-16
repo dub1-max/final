@@ -49,23 +49,23 @@ export default function AboutContent() {
         {/* About Tab */}
         {activeTab === "about" && (
           <TabPanel
-            title="BusinessCentre"
+            title="ConnectingMinds"
             image1="/images/about/image-1.jpg"
             image1Alt="About Image 1"
             image2="/images/about/image-2.jpg"
             image2Alt="About Image 2"
           >
             <p className="mb-6 text-base text-dark-text">
-              At <b>BusinessCentre</b>, we recognize that modern businesses need flexibility
+              At <b>ConnectingMinds</b>, we recognize that modern businesses need flexibility
               and professionalism in their work environments. Our business center is
               designed to meet the evolving needs of today&aposs entrepreneurs and companies.
             </p>
             <p className="mb-6 text-base text-dark-text">
-              Located in the vibrant City Center Deira, our space offers a prime location for startups and established 
+              Located in the vibrant City Center Garhoud, our space offers a prime location for startups and established 
               enterprises alike. You&aposll find everything you need to thrive right at your doorstep.
             </p>
             <p className="text-base text-dark-text">
-              Whether you&aposre launching a new idea or managing an established business, <b>BusinessCentre</b> provides the perfect setting to help you succeed. Join us and elevate your work experience!
+              Whether you're launching a new idea or managing an established business, <b>ConnectingMinds</b> provides the perfect setting to help you succeed. Join us and elevate your work experience!
             </p>
           </TabPanel>
         )}
@@ -73,7 +73,7 @@ export default function AboutContent() {
         {/* Mission Tab */}
         {activeTab === "mission" && (
           <TabPanel
-            title="Why Choose BusinessCentre?"
+            title="Why Choose ConnectingMinds?"
             image1="/images/about/image-1.jpg"
             image1Alt="Mission Image 1"
             image2="/images/about/image-2.jpg"
@@ -101,21 +101,21 @@ export default function AboutContent() {
         {/* Vision Tab */}
         {activeTab === "vision" && (
           <TabPanel
-            title="What&aposs Our Vision in BusinessCentre?"
+            title="What's Our Vision in ConnectingMinds?"
             image1="/images/about/image-1.jpg"
             image1Alt="Vision Image 1"
             image2="/images/about/image-2.jpg"
             image2Alt="Vision Image 2"
           >
             <p className="mb-6 text-base text-dark-text">
-              At <b>BusinessCentre</b>, our mission is to create vibrant and flexible
+              At <b>ConnectingMinds</b>, our mission is to create vibrant and flexible
               workspaces that empower businesses in Dubai to flourish. We 
               are dedicated to cultivating a dynamic environment where entrepreneurs, 
               startups, and established enterprises can collaborate, innovate, and achieve 
               their goals. 
               <br />
               With state-of-the-art facilities and exceptional support, we strive 
-              to inspire creativity and productivity right in the heart of the bustling City Center Deira. 
+              to inspire creativity and productivity right in the heart of the bustling City Center Garhoud. 
               Join us and elevate your business experience in one of the world&aposs most exciting cities!
             </p>
           </TabPanel>
