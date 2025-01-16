@@ -10,7 +10,7 @@ export default function SinglePortfolio({
     <div className={`grid-item`}>
       <div className="group relative overflow-hidden rounded">
         <div className="old-image static">
-          <img
+          <Image
             src={portfolio?.image}
             alt={portfolio?.title}
             width={0}

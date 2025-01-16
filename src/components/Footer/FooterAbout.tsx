@@ -5,14 +5,14 @@ export default function FooterAbout() {
   return (
     <div className="mb-20 max-w-[330px]">
       <Link href="/" className="mb-6 inline-block">
-        <img
+        <Image
           src="/images/logo/logo-dark.svg"
           alt="logo"
           width={215}
           height={50}
           className="hidden dark:block"
         />
-        <img
+        <Image
           src="/images/logo/logo-light.svg"
           alt="logo"
           width={215}

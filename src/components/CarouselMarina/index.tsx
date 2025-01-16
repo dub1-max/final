@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
 import SectionTitle from "../Common/SectionTitle";
-import Image from "next/image";
 
 interface CarouselProps {
   autoSlide?: boolean;

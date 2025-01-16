@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import './style.css'
-import Image from "next/image";
 
 export default function DeiraMain() {
   return (

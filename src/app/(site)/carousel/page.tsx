@@ -21,7 +21,6 @@ export default function Homecarousel() {
     <>
       <section className="pt-10">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      <meta name="algolia-site-verification"  content="3FC0994192AB0869" />
       <div style={{
         paddingTop: "80px"
       }}>
