@@ -8,7 +8,9 @@ export default function Hero() {
     <section
       id="home"
       className="relative z-40 overflow-hidden pb-24 pt-28 sm:pt-36 lg:pb-[120px] lg:pt-[170px]"
+      
     >
+    <meta name="algolia-site-verification"  content="3FC0994192AB0869" />
       <div className="px-4 xl:container">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-3 lg:w-1/2">
