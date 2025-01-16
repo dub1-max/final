@@ -26,7 +26,7 @@ export default function SingleTestimonial({
         <div className="w-full px-4 lg:w-1/2">
           <div className="relative mx-auto mb-9 aspect-square w-full max-w-[420px] lg:mb-0 lg:mr-0">
             <div className="absolute right-5 top-5 z-10 h-full w-full">
-              <img src={testimonial?.image} alt={testimonial?.name} fill />
+              <Image src={testimonial?.image} alt={testimonial?.name} fill />
             </div>
             <div className="absolute -right-5 -top-5 -z-10 h-full w-full border border-primary border-opacity-10 bg-primary bg-opacity-5 backdrop-blur-[6px] dark:border-white dark:border-opacity-10 dark:bg-white dark:bg-opacity-10"></div>
             <div className="absolute -right-4 bottom-20 z-40">

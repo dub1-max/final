@@ -66,14 +66,14 @@ export default function Navbar() {
         <div className="flex w-full flex-wrap px-5 lg:flex-nowrap lg:items-center lg:px-5 xl:px-10 2xl:px-12"> {/** size of navbar */}
           <div className="relative z-[99] max-w-[250px] pr-4 lg:w-full lg:max-w-[220px] xl:max-w-[280px]">
             <Link href="/" className="inline-block">
-              <img
+              <Image
                 src="/images/logo/logo-dark.svg"
                 alt="logo"
                 width={215}
                 height={50}
                 className="hidden dark:block"
               />
-              <img
+              <Image
                 src="/images/logo/logo-light.svg"
                 alt="logo"
                 width={215}

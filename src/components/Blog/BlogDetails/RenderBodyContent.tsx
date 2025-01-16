@@ -13,7 +13,7 @@ const SampleImageComponent = (props: any) => {
   const { width, height } = getImageDimensions(value);
 
   return (
-    <img
+    <Image
       src={urlBuilder(config as any)
         .image(value)
         .fit("max")
