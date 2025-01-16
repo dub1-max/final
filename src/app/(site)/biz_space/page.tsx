@@ -1,3 +1,4 @@
+import AboutBS from "@/components/AboutBS";
 import Biz_Space from "@/components/Biz_Space";
 import CarouselBizSpace from "@/components/CarouselBizSpace";
 import Support from "@/components/Support";
@@ -22,6 +23,7 @@ export default function BizSpacePage() {
       <section className="pt-10">
         <div className="px-4 xl:container">
           <CarouselBizSpace autoSlide={true} autoSlideInterval={6000} slides={slides} />
+          <AboutBS/>
           <Biz_Space />
           <Support />
         </div>

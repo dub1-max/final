@@ -1,3 +1,4 @@
+import AboutCM from "@/components/AboutCM";
 import Carousel from "@/components/Carousel";
 import Connecting_Minds from "@/components/Connecting_Minds";
 import Support from "@/components/Support";
@@ -22,8 +23,8 @@ export default function ConnectingMindsPage() {
       <section className="pt-10">
         <div className="px-4 xl:container">
           <Carousel slides={slides}/>
+          <AboutCM/>
           <Connecting_Minds />
-          
           <Support/>
         </div>
       </section>
