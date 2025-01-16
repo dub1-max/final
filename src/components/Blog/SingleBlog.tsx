@@ -15,7 +15,7 @@ export default function SingleBlog({ blog }: { blog: Blog }) {
             className="relative block aspect-video"
           >
             {mainImage ? (
-              <img
+              <Image
                 src={mainImage ? imageBuilder(mainImage).url() : ""}
                 alt={title}
                 fill
