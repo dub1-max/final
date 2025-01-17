@@ -29,7 +29,7 @@ async function runGitCommands() {
 
         console.log(stdout);
 
-        exec('git push origin main', (err, stdout, stderr) => {
+        exec('git push origin eg', (err, stdout, stderr) => {
           if (err) {
             console.error(`Error pushing: ${stderr}`);
             return;
