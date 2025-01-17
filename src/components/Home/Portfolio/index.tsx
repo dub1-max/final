@@ -32,7 +32,7 @@ export default function Portfolio() {
         <SectionTitle
           mainTitle="PORTFOLIO"
           title="Gallery, Previews and Portfolio"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
+          paragraph=""
         />
 
         <div className="w-full">

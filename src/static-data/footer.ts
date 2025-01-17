@@ -35,7 +35,7 @@ export const footerLinksTwo: FooterLink[] = [
   {
     id: uuid(),
     title: "Company",
-    href: "/",
+    href: "#about",
     external: false,
   },
   {

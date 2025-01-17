@@ -30,7 +30,7 @@ export default function Hero() {
                 />
               </h1>
               <p className="mb-12 text-base text-dark-text">
-              At BusinessCentre , we understand the dynamic nature of modern
+              At <b>BusinessCentre</b> , we understand the dynamic nature of modern
               businesses and the importance of having a flexible and
               professional workspace. Nestled in the bustling heart of City
               Center Deira, our business center is designed to cater to the

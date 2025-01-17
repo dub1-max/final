@@ -10,7 +10,7 @@ export default function Features() {
         <SectionTitle
           mainTitle="Feature"
           title="Services We Offer"
-          paragraph="-"/>
+          paragraph=""/>
 
         <div className="-mx-4 flex flex-wrap justify-center">
           {featuresData.map((feature) => (

@@ -4,23 +4,48 @@ import { v4 as uuid } from "uuid";
 export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
-    title: "Features",
+    title: "Amenities",
     href: "#features",
     external: false,
   },
   {
     id: uuid(),
-    title: "About Us",
+    title: "AboutUs",
     href: "#about",
     external: false,
   },
   {
     id: uuid(),
-    title: "Pricing",
-    href: "#pricing",
+    title: "Gallery",
+    href: "#portfolio",
     external: false,
-  },
-
+  }/*,,
+  {
+    id: uuid(),
+    title: "Gallery",
+    
+    submenu: [
+      {
+        id: uuid(),
+        title: "Services Offered",
+        href: "/",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Support",
+        href: "#support",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Cost Calc",
+        href: "/support",
+        external: false,
+      }
+    ],
+  },*/
+  ,
   {
     id: uuid(),
     title: "Locations",
@@ -28,38 +53,67 @@ export const navbarData: NavbarItem[] = [
     submenu: [
       {
         id: uuid(),
-        title: "Go Biz",
-        href: "/support",
+        title: "Garhoud",
+        href: "/garhoud-main",
         external: false,
       },
       {
         id: uuid(),
-        title: "Pro Box",
-        href: "/support",
+        title: "Deira",
+        href: "/deira-main",
         external: false,
       },
       {
         id: uuid(),
-        title: "Biz Space",
-        href: "/support",
+        title: "SheikhZayed",
+        href: "/sheikhzayedmain",
         external: false,
-      },
-      {
-        id: uuid(),
-        title: "Marina pearl",
-        href: "/support",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Connecting minds",
-        href: "/support",
-        external: false,
-      },
+      }
     ]
+  },
+  {
+    id: uuid(),
+    title: "CoWorking",
+    href: "/coworking",
+    external: true,
   },
 
   {
+    id: uuid(),
+    title: "MeetingRooms",
+    href: "/meetroom_main",
+    external: true,
+  },
+
+  {
+    id: uuid(),
+    title: "Offices",
+
+    submenu: [
+      {
+        id: uuid(),
+        title: "Private Offices",
+        href: "/private_offices",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Smart Cabins",
+        href: "/smart_cabins",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Serviced Office",
+        href: "/serviced_offices",
+        external: false,
+      },
+     
+    ]
+  },
+  
+
+ /* {
     id: uuid(),
     title: "Portfolio",
     submenu: [
@@ -78,45 +132,9 @@ export const navbarData: NavbarItem[] = [
 
     ]
     
-  },
-  {
-    id: uuid(),
-    title: "Gallery",
-    
-    submenu: [
-      {
-        id: uuid(),
-        title: "Services Offered",
-        href: "/",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Locations",
-        href: "/docs",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Support",
-        href: "/support",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Cost Calc",
-        href: "/support",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Locations",
-        href: "/support",
-        external: false,
-      }
-    ],
-  },
-  {
+  },*/
+   
+ /* {
     id: uuid(),
     title: "Pages",
     submenu: [
@@ -161,8 +179,8 @@ export const navbarData: NavbarItem[] = [
         title: "Error 404",
         href: "/error",
         external: false,
-      }, */
+      }, 
     ],
-  },
+  }, */
   
 ];
