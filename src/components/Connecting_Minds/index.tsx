@@ -13,8 +13,6 @@ export const metadata: Metadata = {
   // feature component is only for testing purpose
 };
 
-
-
 export default function Connecting_Minds() {
   return (
     <section id="support" className="pt-14 sm:pt-20 lg:pt-[0px]">
@@ -93,6 +91,7 @@ export default function Connecting_Minds() {
         <div className="px-4 xl:container">
           <Features />
         </div>
+        <div></div>
       </section>
 
       <div className="px-4 xl:container">
@@ -112,16 +111,17 @@ export default function Connecting_Minds() {
               </div>
             </div>*/}
 
-            {/* Flexbox container for the two divs */}
+            {/* Flexbox container for the two divs 
             <div className="flex w-full justify-between space-x-2 px-1 lg:w-1/2">
-              <div className="flex w-1/2 flex-nowrap border border-black">
-                {/* Content for first div */}
+              <div className="flex w-1/2 flex-nowrap border border-black"> for lines 
+                
               </div>
               <div className="flex w-1/2 flex-nowrap border border-black">
-                {/* Content for second div */}
+                
               </div>
             </div>
-            <div className="pt-12 text-center">
+            */}
+            {/* <div className="pt-12 text-center">
               <h3 className="mb-5 font-heading text-xl font-medium text-dark dark:text-white sm:text-3xl">
                 Looking for a company solution?
               </h3>
@@ -131,10 +131,9 @@ export default function Connecting_Minds() {
               >
                 Contact our team to get a quote.
               </Link>
-            </div>
+            </div> */}
 
-
-            {/* Google Maps embed */}
+            {/* Google Maps embed
             <div
               style={{
                 width: "100%",
@@ -152,9 +151,10 @@ export default function Connecting_Minds() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
-            </div>
+            </div> */}
 
-            {/* Contact Information */}
+{/* 
+            Contact Information
             <div className="-mx-4 flex flex-wrap pt-12">
               <div className="w-full px-4 md:w-1/2 lg:w-1/4">
                 <div className="mb-6">
@@ -194,7 +194,6 @@ export default function Connecting_Minds() {
                     aria-label="social-link"
                     className="text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    {/* Replace the SVG content with a proper icon */}
                     <svg
                       width="24"
                       height="24"
@@ -209,7 +208,6 @@ export default function Connecting_Minds() {
                     aria-label="social-link"
                     className="text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    {/* Replace the SVG content with a proper icon */}
                     <svg
                       width="22"
                       height="22"
@@ -230,7 +228,6 @@ export default function Connecting_Minds() {
                     aria-label="social-link"
                     className="text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    {/* Replace the SVG content with a proper icon */}
                     <svg
                       width="24"
                       height="24"
@@ -242,7 +239,7 @@ export default function Connecting_Minds() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ export default function MeetingMainPage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-        <Maps googleMapUrl={mapConfig.googleMapUrl1} />
+        <Maps googleMapUrl={mapConfig.connectingmindsurl} />
         </div>
       </section>
     </>
