@@ -23,7 +23,7 @@ export default function MeetingRoom1Page() {
         <M1_Portfolio/>
         <AboutMeeting1/>
         <FeaturesMeeting/>
-        <Maps googleMapUrl={mapConfig.googleMapUrl1} />
+        <Maps googleMapUrl={mapConfig.connectingmindsurl} />
         <Support/>
         </div>
       </section>

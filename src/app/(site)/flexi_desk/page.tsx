@@ -23,7 +23,7 @@ export default function FlexiDeskPage() {
           {/** change this after */}
           `<FeaturesMeeting />
           <Flexi_Desk />
-          <Maps googleMapUrl={mapConfig.googleMapUrl1} />{" "}
+          <Maps googleMapUrl={mapConfig.connectingmindsurl} />{" "}
           {/** change this after */}
           <Support />
         </div>

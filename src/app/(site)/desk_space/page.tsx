@@ -23,7 +23,7 @@ export default function DeskSpacePage() {
           {/** change this after */}
           <FeaturesMeeting />
           <Desk_Space />
-          <Maps googleMapUrl={mapConfig.googleMapUrl1} />{" "}
+          <Maps googleMapUrl={mapConfig.connectingmindsurl} />
           {/** change this after */}
           <Support />
         </div>
