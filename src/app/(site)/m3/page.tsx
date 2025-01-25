@@ -23,7 +23,7 @@ export default function MeetingRooM3Page() {
         <M3_Portfolio/>
         <AboutMeeting3/>
         <FeaturesMeeting/>
-        <Maps googleMapUrl={mapConfig.googleMapUrl3} />
+        <Maps googleMapUrl={mapConfig.marinapearl_map} />
         <Support/>
         </div>
       </section>

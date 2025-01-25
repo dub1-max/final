@@ -23,7 +23,7 @@ export default function MeetingRooM2Page() {
         <M2_Portfolio/>
         <AboutMeeting2/>
         <FeaturesMeeting/>
-        <Maps googleMapUrl={mapConfig.googleMapUrl2} />
+        <Maps googleMapUrl={mapConfig.marinapearl_map} />
         <Support/>
         </div>
       </section>
