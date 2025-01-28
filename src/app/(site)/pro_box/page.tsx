@@ -2,6 +2,8 @@ import Pro_Box from "@/components/Pro_Box";
 import CarouselProBox from "@/components/CarouselProBox";
 import { Metadata } from "next";
 import Support from "@/components/Support";
+import calConfig from "@/static-data/calConfig";
+import Calendar from "@/components/Calender";
 import AboutPB from "@/components/AboutPB";
 
 const siteName = process.env.SITE_NAME;
@@ -26,6 +28,7 @@ export default function ProBoxPage() {
           <CarouselProBox autoSlide={true} autoSlideInterval={6000} slides={slides} />
           <AboutPB/>
           <Pro_Box />
+          <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
           <Support/>
         </div>
       </section>

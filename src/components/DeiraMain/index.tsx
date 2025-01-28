@@ -7,10 +7,10 @@ export default function DeiraMain() {
     <div style={{ marginTop: "45px" }}>
       <div className="flex flex-wrap items-center justify-center border-b pb-14 dark:border-[#2E333D] lg:pb-0">
         <div className="w-full px-4 text-center lg:w-1/2">
-          <div className="relative mx-auto mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
-            <span className="title left-0 !translate-x-0">DEIRA Locations</span>
+        <div className="relative mx-auto mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
+            <span className="title left-20 !translate-x-0">DEIRA</span>
             <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-              Deira
+              deira
             </h2>
           </div>
         </div>

@@ -29,8 +29,9 @@ export default function ConnectingMindsPage() {
           <Carousel slides={slides}/>
           <AboutCM/>
           <Connecting_Minds />
-          <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
+          
           <Maps googleMapUrl={mapConfig.connectingmindsurl}/>
+          <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
           <Support/>
         </div>
       </section>

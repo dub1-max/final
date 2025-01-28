@@ -3,6 +3,10 @@ import Go_Biz from "@/components/Go_Biz"
 import { Metadata } from "next";
 import Support from "@/components/Support";
 import AboutGB from "@/components/AboutGB";
+import Maps from "@/components/Maps";
+import mapConfig from "@/static-data/mapConfig";
+import calConfig from "@/static-data/calConfig";
+import Calendar from "@/components/Calender";
 
 const siteName = process.env.SITE_NAME;
 const slides = [
@@ -25,6 +29,8 @@ export default function GoBizPage() {
         <CarouselGoBiz autoSlide={true} autoSlideInterval={6000} slides={slides} />
         <AboutGB/>
           <Go_Biz />
+          <Maps googleMapUrl={mapConfig.connectingmindsurl}/>
+          <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
           <Support/>
         </div>
       </section>
