@@ -5,6 +5,10 @@ import Support from "@/components/Support";
 import calConfig from "@/static-data/calConfig";
 import Calendar from "@/components/Calender";
 import AboutPB from "@/components/AboutPB";
+import mapConfig from "@/static-data/mapConfig";
+import Maps from "@/components/Maps";
+
+
 
 const siteName = process.env.SITE_NAME;
 const slides = [
@@ -28,6 +32,7 @@ export default function ProBoxPage() {
           <CarouselProBox autoSlide={true} autoSlideInterval={6000} slides={slides} />
           <AboutPB/>
           <Pro_Box />
+          <Maps googleMapUrl={mapConfig.connectingmindsurl}/>
           <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
           <Support/>
         </div>
