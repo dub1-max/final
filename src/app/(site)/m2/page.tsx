@@ -24,6 +24,7 @@ export default function MeetingRooM2Page() {
         <AboutMeeting2/>
         <FeaturesMeeting/>
         <Maps googleMapUrl={mapConfig.marinapearl_map} />
+        
         <Support/>
         </div>
       </section>
