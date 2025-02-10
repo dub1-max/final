@@ -43,9 +43,9 @@ export default function SinglePricing({ price }: any) {
             /month
           </h3>
 
-          <p className="mx-auto max-w-[300px] text-base text-dark-text">
+                    {/* <p className="mx-auto max-w-[300px] text-base text-dark-text">
             Lorem ipsum dolor sit ametion consectetur adipisc elit.
-          </p>
+          </p> */}
         </div>
         <div className="space-y-4 px-6 pb-[60px] pt-10 text-left sm:px-10 md:px-8 lg:px-10 xl:px-20">
           {price?.nickname === "Starter" && (
