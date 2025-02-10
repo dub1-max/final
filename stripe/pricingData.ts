@@ -10,11 +10,11 @@ export const pricingData = [
     unit_amount: 1400,
     nickname: "Professional",
     subtitle: "For Startups & Entrepreneur",
-  }/*,
+  },
   {
     id: "price_1NQk4eLtGdPVhGLeZsZDsCNz",
-    unit_amount: 300 * 100,
+    unit_amount: 2500,
     nickname: "Business",
-    subtitle: "For Teams",
-  },*/  
+    subtitle: "For Businesses",
+  },
 ];
