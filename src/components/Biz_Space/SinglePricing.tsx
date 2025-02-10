@@ -33,10 +33,10 @@ export default function SinglePricing({ price }: any) {
         </div>
         <div className="border-b py-10 dark:border-[#2E333D]">
           <h3 className="mb-6 flex items-end justify-center pt-2 font-heading text-base font-medium text-dark dark:text-white">
-            AED {" "}
+            AED{" "}
             <sup className="-mb-2 text-[55px]">
               {" "}
-              {(price.unit_amount).toLocaleString("en-US", {
+              {price.unit_amount.toLocaleString("en-US", {
                 currency: "AED",
               })}{" "}
             </sup>
@@ -50,38 +50,116 @@ export default function SinglePricing({ price }: any) {
         <div className="space-y-4 px-6 pb-[60px] pt-10 text-left sm:px-10 md:px-8 lg:px-10 xl:px-20">
           {price?.nickname === "Starter" && (
             <>
-            <SingleOffer text="24/7 access" status="inactive" />
-            <SingleOffer text="Access to business support services" status="inactive" />
-            <SingleOffer text="Access to the Open Coworking Lounges & Specialty Café" status="active" />
-            <SingleOffer text="Access to Shared Spaces" status="active" />
-            <SingleOffer text="Access to events and workshops" status="active" />
-            <SingleOffer text="Discount to book resources & services" status="active" />
-            <SingleOffer text="Dedicated local virtual phone at a cost" status="active" />
-            <SingleOffer text="Secure & Unlimited Wifi" status="active" />
-            <SingleOffer text="Beverages from our Specialty Café" status="active" />
-            <SingleOffer text="Private storage space for rent at additional cost" status="active" />
-          </>
-          
+              <SingleOffer text="24/7 access" status="inactive" />
+              <SingleOffer
+                text="Access to business support services"
+                status="inactive"
+              />
+              <SingleOffer
+                text="Access to the Open Coworking Lounges & Specialty Café"
+                status="active"
+              />
+              <SingleOffer text="Access to Shared Spaces" status="active" />
+              <SingleOffer
+                text="Access to events and workshops"
+                status="active"
+              />
+              <SingleOffer
+                text="Discount to book resources & services"
+                status="active"
+              />
+              <SingleOffer
+                text="Dedicated local virtual phone at a cost"
+                status="active"
+              />
+              <SingleOffer text="Secure & Unlimited Wifi" status="active" />
+              <SingleOffer
+                text="Beverages from our Specialty Café"
+                status="active"
+              />
+              <SingleOffer
+                text="Private storage space for rent at additional cost"
+                status="active"
+              />
+            </>
           )}
+
           {price?.nickname === "Professional" && (
             <>
-            <SingleOffer text="24/7 access" status="active" />
-            <SingleOffer text="Access to business support services" status="active" />
-            <SingleOffer text="Access to the Open Coworking Lounges & Specialty Café" status="active" />
-            <SingleOffer text="Access to Shared Spaces" status="active" />
-            <SingleOffer text="Access to events and workshops" status="active" />
-            <SingleOffer text="Discount to book resources & services" status="active" />
-            <SingleOffer text="Dedicated local virtual phone at a cost" status="active" />
-            <SingleOffer text="Secure & Unlimited Wifi" status="active" />
-            <SingleOffer text="Beverages from our Specialty Café" status="active" />
-            <SingleOffer text="Private storage space for rent at additional cost" status="active" />
-          </>
+              <SingleOffer text="24/7 access" status="active" />
+              <SingleOffer
+                text="Access to business support services"
+                status="active"
+              />
+              <SingleOffer
+                text="Access to the Open Coworking Lounges & Specialty Café"
+                status="active"
+              />
+              <SingleOffer text="Access to Shared Spaces" status="active" />
+              <SingleOffer
+                text="Access to events and workshops"
+                status="active"
+              />
+              <SingleOffer
+                text="Discount to book resources & services"
+                status="active"
+              />
+              <SingleOffer
+                text="Dedicated local virtual phone at a cost"
+                status="active"
+              />
+              <SingleOffer text="Secure & Unlimited Wifi" status="active" />
+              <SingleOffer
+                text="Beverages from our Specialty Café"
+                status="active"
+              />
+              <SingleOffer
+                text="Private storage space for rent at additional cost"
+                status="active"
+              />
+            </>
+          )}
+
+          {price?.nickname === "Business" && (
+            <>
+              <SingleOffer text="24/7 access" status="active" />
+              <SingleOffer
+                text="Access to business support services"
+                status="active"
+              />
+              <SingleOffer
+                text="Access to the Open Coworking Lounges & Specialty Café"
+                status="active"
+              />
+              <SingleOffer text="Access to Shared Spaces" status="active" />
+              <SingleOffer
+                text="Access to events and workshops"
+                status="active"
+              />
+              <SingleOffer
+                text="Discount to book resources & services"
+                status="active"
+              />
+              <SingleOffer
+                text="Dedicated local virtual phone at a cost"
+                status="active"
+              />
+              <SingleOffer text="Secure & Unlimited Wifi" status="active" />
+              <SingleOffer
+                text="Beverages from our Specialty Café"
+                status="active"
+              />
+              <SingleOffer
+                text="Private storage space for rent at additional cost"
+                status="active"
+              />
+            </>
           )}
         </div>
-        
+
         <button
           onClick={handleSubscription}
-          className="inline-flex items-center rounded px-8 py-[14px] font-heading text-base text-white bg-blue-600 hover:bg-blue-500 duration-200 shadow-lg hover:shadow-md transition-all"
+          className="inline-flex items-center rounded bg-blue-600 px-8 py-[14px] font-heading text-base text-white shadow-lg transition-all duration-200 hover:bg-blue-500 hover:shadow-md"
         >
           Join This Plan
           <span className="pl-3">
@@ -99,7 +177,6 @@ export default function SinglePricing({ price }: any) {
             </svg>
           </span>
         </button>
-        
       </div>
     </div>
   );
