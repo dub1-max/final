@@ -22,7 +22,7 @@ export default function SinglePricing({ price }: any) {
 
   return (
     <div
-      className={`w-full sm:w-1/2 lg:w-1/2 ${price?.nickname === "Professional" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
+      className={`w-full sm:w-1/3 lg:w-1/3 ${price?.nickname === "Professional" ? "dark:border-[#2E333D] sm:border-l lg:border-x" : ""}`}
     >
       <div className="pb-20 pt-10 text-center">
         <div className="border-b dark:border-[#2E333D]">
