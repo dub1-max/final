@@ -227,7 +227,7 @@ export default function Support() {
               <br />
             </div>
 
-            <div className="-mx-4 flex flex-wrap pt-12">
+            {/* <div className="-mx-4 flex flex-wrap pt-12">
               <div className="w-full px-4 md:w-1/2 lg:w-1/4">
                 <div className="mb-6">
                   <h3 className="mb-2 font-heading text-base text-dark dark:text-white sm:text-xl">
@@ -324,7 +324,7 @@ export default function Support() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
