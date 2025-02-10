@@ -1,15 +1,15 @@
 export const pricingData = [
   {
     id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
-    unit_amount: 100 * 100,
+    unit_amount: 800,
     nickname: "Starter",
-    subtitle: "For Individuals",
+    subtitle: "For Freelancers & Startups",
   },
   {
     id: "price_1NQk55LtGdPVhGLefU8AHqHr",
-    unit_amount: 200 * 100,
+    unit_amount: 1400,
     nickname: "Professional",
-    subtitle: "For Startups",
+    subtitle: "For Startups & Entrepreneur",
   }/*,
   {
     id: "price_1NQk4eLtGdPVhGLeZsZDsCNz",

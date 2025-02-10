@@ -36,7 +36,7 @@ export default function SinglePricing({ price }: any) {
             AED{" "}
             <sup className="-mb-2 text-[55px]">
               {" "}
-              {(price.unit_amount / 595).toLocaleString("en-US", {
+              {(price.unit_amount).toLocaleString("en-US", {
                 currency: "AED",
               })}{" "}
             </sup>
