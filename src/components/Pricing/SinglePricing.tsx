@@ -34,11 +34,11 @@ export default function SinglePricing({ price }: any) {
         </div>
         <div className="border-b py-10 dark:border-[#2E333D]">
           <h3 className="mb-6 flex items-end justify-center pt-2 font-heading text-base font-medium text-dark dark:text-white">
-            ${" "}
+            AED{" "}
             <sup className="-mb-2 text-[55px]">
               {" "}
               {(price.unit_amount / 100).toLocaleString("en-US", {
-                currency: "USD",
+                currency: "AED",
               })}{" "}
             </sup>
             /month
