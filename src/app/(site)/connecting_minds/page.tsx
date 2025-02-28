@@ -29,7 +29,6 @@ export default function ConnectingMindsPage() {
           <Carousel slides={slides}/>
           <AboutCM/>
           <Connecting_Minds />
-          
           <Maps googleMapUrl={mapConfig.connectingmindsurl}/>
           <Calendar />
           <Support/>
