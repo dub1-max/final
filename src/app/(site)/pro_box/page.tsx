@@ -33,7 +33,7 @@ export default function ProBoxPage() {
           <AboutPB/>
           <Pro_Box />
           <Maps googleMapUrl={mapConfig.connectingmindsurl}/>
-          <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
+          <Calendar />
           <Support/>
         </div>
       </section>

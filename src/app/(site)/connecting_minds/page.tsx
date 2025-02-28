@@ -31,7 +31,7 @@ export default function ConnectingMindsPage() {
           <Connecting_Minds />
           
           <Maps googleMapUrl={mapConfig.connectingmindsurl}/>
-          <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
+          <Calendar />
           <Support/>
         </div>
       </section>

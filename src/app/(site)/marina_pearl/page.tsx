@@ -33,9 +33,8 @@ export default function MarinaPearlPage() {
           />
           <AboutMP />
           <Marina_pearl />
-          <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
+          <Calendar />
           <Maps googleMapUrl={mapConfig.marinapearl_map}/>
-
           <Support />
         </div>
       </section>

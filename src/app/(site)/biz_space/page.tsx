@@ -2,9 +2,7 @@ import AboutBS from "@/components/AboutBS";
 import Biz_Space from "@/components/Biz_Space";
 import CarouselBizSpace from "@/components/CarouselBizSpace";
 import Support from "@/components/Support";
-import calConfig from "@/static-data/calConfig";
 import Calendar from "@/components/Calender";
-
 
 import { Metadata } from "next";
 const slides = [
@@ -28,9 +26,8 @@ export default function BizSpacePage() {
           <CarouselBizSpace autoSlide={true} autoSlideInterval={6000} slides={slides} />
           <AboutBS/>
           <Biz_Space />
-          <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
-          <Support />
-          
+          <Calendar/>
+          <Support />  
         </div>
       </section>
     </>

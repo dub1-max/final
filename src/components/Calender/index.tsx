@@ -21,9 +21,28 @@ const generateTimeSlots = () => {
 
 const bookedSlots: Set<string> = new Set(); // Simulating database storage
 
-const sendEmailConfirmation = (email: string, location: string, center: string, slot: string) => {
-  console.log(`📧 Sending email to ${email} - Booking confirmed for ${center} at ${slot}`);
-  alert(`Confirmation email sent to ${email} ✅`);
+const sendEmailConfirmation = async (
+  email: string,
+  location: string,
+  center: string,
+  slot: string
+) => {
+  try {
+    const response = await fetch("/api/sendemail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, location, center, slot }),
+    });
+
+    if (response.ok) {
+      alert(`Confirmation email sent to ${email} ✅`);
+    } else {
+      alert("Failed to send confirmation email. Please try again.");
+    }
+  } catch (error) {
+    console.error("Email request failed:", error);
+    alert("Error sending email.");
+  }
 };
 
 export default function CustomCalendar() {
@@ -37,10 +56,10 @@ export default function CustomCalendar() {
     setSelectedSlot(null);
   }, [selectedLocation]);
 
-  const handleBooking = () => {
+  const handleBooking = async () => {
     if (selectedLocation && selectedCenter && selectedSlot && email) {
       bookedSlots.add(`${selectedLocation}-${selectedCenter}-${selectedSlot}`);
-      sendEmailConfirmation(email, selectedLocation, selectedCenter, selectedSlot);
+      await sendEmailConfirmation(email, selectedLocation, selectedCenter, selectedSlot);
       setSelectedSlot(null);
     }
   };
@@ -49,7 +68,6 @@ export default function CustomCalendar() {
     <div className="max-w-3xl mx-auto mt-10 p-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white shadow-xl rounded-lg">
       <h2 className="text-3xl font-bold text-center mb-6">📅 Book A Session</h2>
 
-      {/* Location Selection */}
       <div className="flex justify-center space-x-4 mb-6">
         {Object.keys(locations).map((location) => (
           <motion.button
@@ -57,9 +75,7 @@ export default function CustomCalendar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className={`px-6 py-3 rounded-full transition-all duration-300 text-lg font-medium ${
-              selectedLocation === location
-                ? "bg-blue-600 text-white shadow-lg"
-                : "bg-gray-600 hover:bg-gray-500"
+              selectedLocation === location ? "bg-blue-600 text-white shadow-lg" : "bg-gray-600 hover:bg-gray-500"
             }`}
             onClick={() => setSelectedLocation(location)}
           >
@@ -68,7 +84,6 @@ export default function CustomCalendar() {
         ))}
       </div>
 
-      {/* Business Center Selection */}
       {selectedLocation && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -82,9 +97,7 @@ export default function CustomCalendar() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`px-6 py-3 rounded-full transition-all duration-300 text-lg font-medium ${
-                selectedCenter === center
-                  ? "bg-green-600 text-white shadow-lg"
-                  : "bg-gray-600 hover:bg-gray-500"
+                selectedCenter === center ? "bg-green-600 text-white shadow-lg" : "bg-gray-600 hover:bg-gray-500"
               }`}
               onClick={() => setSelectedCenter(center)}
             >
@@ -94,13 +107,8 @@ export default function CustomCalendar() {
         </motion.div>
       )}
 
-      {/* Calendar Time Slots */}
       {selectedCenter && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-        >
+        <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
           <h3 className="text-xl font-semibold text-center mb-4">⏳ Select a Time Slot:</h3>
           <div className="grid grid-cols-3 gap-3">
             {generateTimeSlots().map((slot) => {
@@ -112,11 +120,7 @@ export default function CustomCalendar() {
                   whileTap={!isBooked ? { scale: 0.95 } : {}}
                   disabled={isBooked}
                   className={`px-4 py-2 rounded-lg transition-all duration-300 text-lg font-medium ${
-                    selectedSlot === slot
-                      ? "bg-blue-600 text-white shadow-lg"
-                      : isBooked
-                      ? "bg-gray-400 cursor-not-allowed opacity-50"
-                      : "bg-gray-700 hover:bg-gray-600"
+                    selectedSlot === slot ? "bg-blue-600 text-white shadow-lg" : isBooked ? "bg-gray-400 cursor-not-allowed opacity-50" : "bg-gray-700 hover:bg-gray-600"
                   }`}
                   onClick={() => setSelectedSlot(slot)}
                 >
@@ -128,14 +132,8 @@ export default function CustomCalendar() {
         </motion.div>
       )}
 
-      {/* Email Input & Confirmation */}
       {selectedSlot && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-          className="mt-6"
-        >
+        <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="mt-6">
           <input
             type="email"
             className="w-full p-3 border border-gray-500 bg-gray-800 rounded-lg text-white"

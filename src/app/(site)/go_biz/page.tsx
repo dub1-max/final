@@ -30,7 +30,7 @@ export default function GoBizPage() {
         <AboutGB/>
           <Go_Biz />
           <Maps googleMapUrl={mapConfig.connectingmindsurl}/>
-          <Calendar googleCalenderUrl={calConfig.ConnectingMind}/>
+          <Calendar />
           <Support/>
         </div>
       </section>
