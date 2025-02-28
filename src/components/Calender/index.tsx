@@ -1,34 +1,159 @@
-import calConfig from "@/static-data/calConfig";
-import SectionTitle from "../Common/SectionTitle";
-type CalenderProps = {
-  googleCalenderUrl: string;
+"use client";
+
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+const locations: Record<string, string[]> = {
+  Garhoud: ["Connecting Minds", "Pro Box"],
+  Deira: ["Biz Space", "Go Biz"],
+  "Sheikh Zayed": ["Marina Pearl"],
 };
 
-export default function Calendar({ googleCalenderUrl }: CalenderProps) {
+// Generate time slots from 9:00 AM to 5:00 PM (30-minute intervals)
+const generateTimeSlots = () => {
+  const slots = [];
+  for (let hour = 9; hour < 17; hour++) {
+    slots.push(`${hour}:00 AM`);
+    slots.push(`${hour}:30 AM`);
+  }
+  return slots;
+};
+
+const bookedSlots: Set<string> = new Set(); // Simulating database storage
+
+const sendEmailConfirmation = (email: string, location: string, center: string, slot: string) => {
+  console.log(`📧 Sending email to ${email} - Booking confirmed for ${center} at ${slot}`);
+  alert(`Confirmation email sent to ${email} ✅`);
+};
+
+export default function CustomCalendar() {
+  const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
+  const [selectedCenter, setSelectedCenter] = useState<string | null>(null);
+  const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
+  const [email, setEmail] = useState<string>("");
+
+  useEffect(() => {
+    setSelectedCenter(null);
+    setSelectedSlot(null);
+  }, [selectedLocation]);
+
+  const handleBooking = () => {
+    if (selectedLocation && selectedCenter && selectedSlot && email) {
+      bookedSlots.add(`${selectedLocation}-${selectedCenter}-${selectedSlot}`);
+      sendEmailConfirmation(email, selectedLocation, selectedCenter, selectedSlot);
+      setSelectedSlot(null);
+    }
+  };
+
   return (
-    <section>
-      <br />
-      <div > 
-        <SectionTitle
-          
-          mainTitle="Book A Session"
-          title="Book A Session"
-          paragraph=""
-        />
+    <div className="max-w-3xl mx-auto mt-10 p-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white shadow-xl rounded-lg">
+      <h2 className="text-3xl font-bold text-center mb-6">📅 Book A Session</h2>
+
+      {/* Location Selection */}
+      <div className="flex justify-center space-x-4 mb-6">
+        {Object.keys(locations).map((location) => (
+          <motion.button
+            key={location}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`px-6 py-3 rounded-full transition-all duration-300 text-lg font-medium ${
+              selectedLocation === location
+                ? "bg-blue-600 text-white shadow-lg"
+                : "bg-gray-600 hover:bg-gray-500"
+            }`}
+            onClick={() => setSelectedLocation(location)}
+          >
+            {location}
+          </motion.button>
+        ))}
       </div>
-      <div>
-        <iframe
-          style={{
-            width: "100%",
-            height: "80vh",
-            borderRadius: "8px",
-            boxShadow:
-              "0 8px 20px 0px rgba(0, 48, 241, 0.5), 0 8px 40px 0px rgba(5, 230, 238, 0.5)",
-            overflow: "hidden",
-          }}
-          src={googleCalenderUrl}
-        ></iframe>
-      </div>
-    </section>
+
+      {/* Business Center Selection */}
+      {selectedLocation && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="flex justify-center space-x-4 mb-6"
+        >
+          {locations[selectedLocation].map((center) => (
+            <motion.button
+              key={center}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`px-6 py-3 rounded-full transition-all duration-300 text-lg font-medium ${
+                selectedCenter === center
+                  ? "bg-green-600 text-white shadow-lg"
+                  : "bg-gray-600 hover:bg-gray-500"
+              }`}
+              onClick={() => setSelectedCenter(center)}
+            >
+              {center}
+            </motion.button>
+          ))}
+        </motion.div>
+      )}
+
+      {/* Calendar Time Slots */}
+      {selectedCenter && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <h3 className="text-xl font-semibold text-center mb-4">⏳ Select a Time Slot:</h3>
+          <div className="grid grid-cols-3 gap-3">
+            {generateTimeSlots().map((slot) => {
+              const isBooked = bookedSlots.has(`${selectedLocation}-${selectedCenter}-${slot}`);
+              return (
+                <motion.button
+                  key={slot}
+                  whileHover={!isBooked ? { scale: 1.05 } : {}}
+                  whileTap={!isBooked ? { scale: 0.95 } : {}}
+                  disabled={isBooked}
+                  className={`px-4 py-2 rounded-lg transition-all duration-300 text-lg font-medium ${
+                    selectedSlot === slot
+                      ? "bg-blue-600 text-white shadow-lg"
+                      : isBooked
+                      ? "bg-gray-400 cursor-not-allowed opacity-50"
+                      : "bg-gray-700 hover:bg-gray-600"
+                  }`}
+                  onClick={() => setSelectedSlot(slot)}
+                >
+                  {slot}
+                </motion.button>
+              );
+            })}
+          </div>
+        </motion.div>
+      )}
+
+      {/* Email Input & Confirmation */}
+      {selectedSlot && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="mt-6"
+        >
+          <input
+            type="email"
+            className="w-full p-3 border border-gray-500 bg-gray-800 rounded-lg text-white"
+            placeholder="📧 Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={handleBooking}
+            disabled={!email}
+            className="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg transition-all duration-300 text-lg font-semibold disabled:opacity-50"
+          >
+            ✅ Confirm Booking
+          </motion.button>
+        </motion.div>
+      )}
+    </div>
   );
 }
