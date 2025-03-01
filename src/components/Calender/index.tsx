@@ -15,8 +15,10 @@ const locations: Record<string, string[]> = {
 const generateTimeSlots = () => {
   const slots = [];
   for (let hour = 9; hour < 17; hour++) {
-    slots.push(`${hour}:00 AM`);
-    slots.push(`${hour}:30 AM`);
+    const ampm = hour < 12 ? "AM" : "PM";
+    const displayHour = hour <= 12 ? hour : hour - 12;
+    slots.push(`${displayHour}:00 ${ampm}`);
+    slots.push(`${displayHour}:30 ${ampm}`);
   }
   return slots;
 };
@@ -75,19 +77,30 @@ export default function CustomCalendar() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Left Column: Date Picker */}
-        <div className="flex flex-col items-center">
-          <h3 className="text-xl font-semibold mb-4">🗓 Select Date</h3>
-          <DatePicker
-            selected={selectedDate}
-            onChange={(date) => setSelectedDate(date)}
-            minDate={new Date()}
-            className="text-black text-lg p-3 border border-gray-500 rounded-lg w-64 bg-white"
-            inline
-          />
+        <div className="flex flex-col items-center bg-gray-900 p-6 rounded-2xl shadow-xl w-full max-w-md">
+          <h3 className="text-2xl font-semibold mb-4 text-white">🗓 Select Date</h3>
+
+          <motion.div 
+            initial={{ opacity: 0, y: -10 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.3 }}
+            className="w-full"
+          >
+            <DatePicker
+              selected={selectedDate}
+              onChange={(date) => setSelectedDate(date)}
+              minDate={new Date()}
+              showMonthDropdown
+              showYearDropdown
+              dropdownMode="select"
+              className="custom-datepicker text-black text-lg p-3 border border-gray-600 rounded-xl w-full bg-white focus:ring-2 focus:ring-blue-500 transition-all"
+              inline
+            />
+          </motion.div>
         </div>
 
         {/* Right Column: Booking Options */}
-        <div>
+        <div className="flex flex-col items-center">
           {/* Location Selection */}
           <div className="flex justify-center space-x-4 mb-6">
             {Object.keys(locations).map((location) => (
@@ -107,12 +120,7 @@ export default function CustomCalendar() {
 
           {/* Business Center Selection */}
           {selectedLocation && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-              className="flex justify-center space-x-4 mb-6"
-            >
+            <motion.div className="flex justify-center space-x-4 mb-6">
               {locations[selectedLocation].map((center) => (
                 <motion.button
                   key={center}
@@ -131,7 +139,7 @@ export default function CustomCalendar() {
 
           {/* Time Slot Selection */}
           {selectedCenter && (
-            <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+            <motion.div>
               <h3 className="text-xl font-semibold text-center mb-4">⏳ Select a Time Slot:</h3>
               <div className="grid grid-cols-3 gap-3">
                 {generateTimeSlots().map((slot) => {
@@ -163,7 +171,7 @@ export default function CustomCalendar() {
 
           {/* Email Input & Confirmation */}
           {selectedSlot && (
-            <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="mt-6">
+            <motion.div className="mt-6">
               <input
                 type="email"
                 className="w-full p-3 border border-gray-500 bg-gray-800 rounded-lg text-white"

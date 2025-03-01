@@ -174,3 +174,41 @@
 .read-more:hover {
   background-color: #004494;
 }
+
+{/* Add this to your global CSS or inside index.css */}
+
+/* Custom styles for DatePicker dropdowns */
+.custom-datepicker .react-datepicker__header {
+  background-color: white !important; /* White background for header */
+  border-bottom: 1px solid #ccc !important;
+}
+
+.react-datepicker__month-dropdown-container select,
+.react-datepicker__year-dropdown-container select {
+  background: transparent !important; /* Transparent dropdown */
+  color: black !important; /* Black text */
+  border: 1px solid #ccc !important; /* Subtle border */
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.react-datepicker__month-dropdown-container select:focus,
+.react-datepicker__year-dropdown-container select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.react-datepicker__month-option,
+.react-datepicker__year-option {
+  background: white !important;
+  color: black !important;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.react-datepicker__month-option:hover,
+.react-datepicker__year-option:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
