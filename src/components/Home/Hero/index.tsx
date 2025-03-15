@@ -40,7 +40,7 @@ export default function Hero() {
               <div className="flex flex-wrap items-center justify-center lg:justify-start">
                 <a
                   href="#features"
-                  className="inline-flex items-center rounded bg-primary px-6 py-[10px] font-heading text-base text-white hover:bg-opacity-90 md:px-8 md:py-[14px]"
+                  className="inline-flex items-center rounded bg-primary px-6 py-[20px] font-heading text-base text-white hover:bg-opacity-90 md:px-8 md:py-[14px]"
                 >
                   Get Started
                   <span className="pl-3">
@@ -131,7 +131,7 @@ export default function Hero() {
                 </svg>
               </div>
               <div className="absolute bottom-0 left-1/2">
-                <svg
+                {/* <svg
                   width="120"
                   height="120"
                   viewBox="0 0 120 120"
@@ -156,7 +156,7 @@ export default function Hero() {
                       <stop offset="1" stopColor="#111722" />
                     </radialGradient>
                   </defs>
-                </svg>
+                </svg> */}
               </div>
             </div>
           </div>

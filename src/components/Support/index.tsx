@@ -1,4 +1,64 @@
+"use client"; // Add this directive for client-side interactivity
+
+import { useState, useRef } from "react";
+import { useRouter } from "next/navigation";
+import toast, { Toaster } from "react-hot-toast";
+
+
 export default function Support() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
+  const formRef = useRef<HTMLFormElement>(null); // Ref to access the form
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+
+    if (!formRef.current) {
+      console.error("Form reference is null");
+      return;
+    }
+
+    const formData = new FormData(formRef.current);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/sendform", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        // Show success toast
+        toast.success("Email sent successfully!");
+
+        // Reset the form
+        formRef.current.reset(); // Use the ref to reset the form
+
+        // Redirect to the home page after 2 seconds
+        setTimeout(() => {
+          router.push("/#");
+        }, 2000);
+      } else {
+        // Show error toast
+        toast.error("Failed to send email. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("An error occurred. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <section id="support" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
@@ -39,42 +99,6 @@ export default function Support() {
                 <div className="flex items-center"></div>
               </div>
             </div>
-            {/*    <div
-              style={{
-                width: "100%",
-                height: "60vh",
-                borderRadius: "8px",
-                boxShadow: "0 4px 10px rgba(51, 46, 61, 0.9)", // Add shadow here
-                overflow: "hidden", // Ensures rounded corners work for the iframe
-              }}
-            >
-              {/* Google Maps Iframe */}
-            {/*
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3608.533814833539!2d55.3343434!3d25.2526222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d860e0e9893%3A0x430d10f5f736cfe4!2sBiz%20space%20Business%20Center!5e0!3m2!1sen!2sin!4v1728645730259!5m2!1sen!2sin"
-                style={{
-                  width: "100%",
-                  height: "100%", // Use 100% to fill the parent div
-                  border: "0",
-                }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>*/}
-
-            {/*<div className="ml-auto w-full px-4 lg:w-1/2">
-              <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
-                <span className="title left-1000 !translate-x-0">
-                  {" "}
-                  Enquire Now{" "}
-                </span>
-                <h2 className="mb-6 ml-auto  text-right font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[45px] md:leading-[60px]">
-                  Get A Quote
-                </h2>
-              </div>
-            </div>
-            <br />*/}
 
             <div
               style={{
@@ -84,9 +108,9 @@ export default function Support() {
               }}
             >
               <div className="mx-auto max-w-[780px] px-4 pt-[130px] sm:px-6 lg:px-8">
-                <form
+                <form ref={formRef}
                   className="w-full" // Ensures the form takes full width of the container
-                  action="https://formbold.com/s/60p4z"
+                  onSubmit={handleSubmit}
                   method="POST"
                 >
                   <div className="-mx-4 flex flex-wrap">
@@ -144,24 +168,24 @@ export default function Support() {
                         />
                       </div>
                     </div>
-                    {/**<div className="w-full px-4 sm:w-1/2">
-                    <div className="mb-12">
-                      <label
-                        htmlFor="subject"
-                        className="mb-3 block font-heading text-base text-dark dark:text-white"
-                      >
-                        {" "}
-                        Subject{" "}
-                      </label>
-                      <input
-                        type="text"
-                        name="subject"
-                        id="subject"
-                        placeholder="Type Subject"
-                        className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
-                      />
+                    <div className="w-full px-4 sm:w-1/2">
+                      <div className="mb-12">
+                        <label
+                          htmlFor="subject"
+                          className="mb-3 block font-heading text-base text-dark dark:text-white"
+                        >
+                          {" "}
+                          Subject{" "}
+                        </label>
+                        <input
+                          type="text"
+                          name="subject"
+                          id="subject"
+                          placeholder="Type Subject"
+                          className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
+                        />
+                      </div>
                     </div>
-                  </div>*/}
                     <div className="sm:w-2/2 w-full px-4">
                       <div className="mb-12">
                         <label
@@ -216,9 +240,14 @@ export default function Support() {
                       </div>
                     </div>
 
+                    {/* Submit Button */}
                     <div className="w-full px-4">
-                      <button className="flex w-full items-center justify-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90">
-                        Send Message
+                      <button
+                        type="submit"
+                        className="flex w-full items-center justify-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90"
+                        disabled={isSubmitting}
+                      >
+                        {isSubmitting ? "Sending..." : "Send Message"}
                       </button>
                     </div>
                   </div>

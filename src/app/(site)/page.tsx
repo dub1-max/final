@@ -14,6 +14,7 @@ import { Metadata } from "next";
 import { Sliders } from "react-feather";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react"
+import { AppleCardsCarouselDemo } from "./apple_carousel/page";
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
@@ -31,12 +32,13 @@ export default function Home() {
       <About />
       {/** <Carousel slides={slides}/>
       <Team />*/}
-      <Portfolio />
+      {/* <Portfolio /> */}
       {/*<Testimonials />*/}
-      <Brands />
+      {/* <Brands /> */}
       {/*<Pricing />*/}
-      <HomeBlogSection />
+      {/* <HomeBlogSection /> */}
       {/**<Support /> map and support removed form main page*/} 
+      <AppleCardsCarouselDemo/>
       <Support />
       <CallToAction />
     </>

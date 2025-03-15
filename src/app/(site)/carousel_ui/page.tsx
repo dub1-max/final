@@ -1,21 +1,6 @@
-import CarouselGoBiz from "@/components/CarouselGoBiz";
-import Go_Biz from "@/components/Go_Biz"
-import { Metadata } from "next";
-import Support from "@/components/Support";
-import AboutGB from "@/components/AboutGB";
-import Maps from "@/components/Maps";
-import mapConfig from "@/static-data/mapConfig";
-import calConfig from "@/static-data/calConfig";
-import Calendar from "@/components/Calender";
 import Carousel_UI from "@/components/ui/carousel";
 
-const siteName = process.env.SITE_NAME;
-const slides = [
-  "https://i.ibb.co/ncrXc2V/1.png",
-  "https://i.ibb.co/B3s7v4h/2.png",
-  "https://i.ibb.co/XXR8kzF/3.png"
-  ];
-
+export function CarouselDemo() {
   const slideData = [
     {
       title: "Mystic Mountains",
@@ -38,25 +23,9 @@ const slides = [
       src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
-export const metadata: Metadata = {
-  title: `Go Biz | ${siteName}`,
-  description: "This is Support page",
-  // other metadata
-};
-
-export default function GoBizPage() {
   return (
-    <>
-      <section className="pt-10">
-        <div className="px-4 xl:container">
-        <Carousel_UI slides={slideData} />
-        <AboutGB/>
-          <Go_Biz />
-          <Maps googleMapUrl={mapConfig.connectingmindsurl}/>
-          <Calendar />
-          <Support/>
-        </div>
-      </section>
-    </>
+    <div className="relative overflow-hidden w-full h-full py-20">
+      <Carousel_UI slides={slideData} />
+    </div>
   );
 }
