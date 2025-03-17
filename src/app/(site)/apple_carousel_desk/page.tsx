@@ -27,7 +27,7 @@ export function AppleCardsCarouselDesk() {
       />
 
       <Carousel items={cards} />
-    
+
     </div>
   );
 }
@@ -68,33 +68,33 @@ const data = [
   {
     category: "Business Centers",
     title: "Connecting Minds", src: "https://i.postimg.cc/0ywR25cP/image-1.jpg",
-    content: <DummyContent />,
+    content: null,
   },
   {
     category: "Business Centers",
     title: "Connecting Minds", src: "https://i.postimg.cc/K8MjS2Tg/gk-v1SqN.jpg",
-    content: <DummyContent />,
+    content: null,
   },
   {
     category: "Business Centers",
     title: "Connecting Minds", src: "https://i.postimg.cc/yNhNxyv1/UdDTEeNg.jpg",
-    content: <DummyContent />,
+    content: null,
   },
 
   {
     category: "Business Centers",
     title: "Connecting Minds", src: "https://i.postimg.cc/0Qc2d5Th/G-QP6d.jpg",
-    content: <DummyContent />,
+    content: null,
   },
   {
     category: "Business Centers",
     title: "Connecting Minds", src: "https://i.postimg.cc/K8MjS2Tg/gk-v1SqN.jpg",
-    content: <DummyContent />,
+    content: null,
   },
   {
     category: "Business Centers",
     title: "Connecting Minds",
     src: "https://ucf9f471342ee46080115d3ff424.previews.dropboxusercontent.com/p/thumb/ACmxq9dDKiYi8vE6hCqq9rfCNCCSohnc1w2X7bxUI5s5OHzZU44g2_K9nc1KL2Knpy2srvgHvLQFhbUd8UnSLStdKXdxiHnZWTggpx7wsuV0sl6Bfg7gUaMFqPBMxkR16aCuvUfJzdM2izjN402T8ouyCSTHK-NAeapIdm99PCfkhdD_3HsXvZQU0rwSkrW0w0-qLJ7-Z77oP4cwVd9rCraTKJVuy8BjhsaPfpIrb52QZgYAGQ71lkjO_LpGD-XaU8wBwu21aNrBHr-Zr5NWbMcmKAL00Dh2tPVTccjCVThp9nsjI3Wb1GA9pphGszhSX0T2pfv_iompma45_dkIS9WIaSGSUWSmLkUAl5h7p7nMBkady4qe2TZe_ciqeO7pTQNdWez_w_oW1hrlAkegczIGOa7HjZnsMSKOHDVWcsu56wiwaLn3zGq3KcJCdhp3HBPzknUqpqh442MgNBTnWq_DPJX695g1GWj3il_KuYvV2dbUv5zZAVq3aUtyDJdzMHUem1vPR0OGfLwSqsN4vg4-jFDj_bLynEQ67x5p0i_9Og/p.jpeg",
-    content: <DummyContent />,
+    content: null,
   },
 ];
