@@ -7,13 +7,19 @@ const nextConfig = {
         hostname: "cdn.sanity.io",
         port: "",
       },
-    ],
-  },
-  images: {
-    remotePatterns: [
       {
         protocol: "https",
         hostname: "images.unsplash.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "i.postimg.cc",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "*.previews.dropboxusercontent.com",
         port: "",
       },
     ],

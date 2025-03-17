@@ -65,40 +65,35 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Business Centers",
+    title: "Connecting Minds", src: "https://i.postimg.cc/0ywR25cP/image-1.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Business Centers",
+    title: "Connecting Minds", src: "https://i.postimg.cc/K8MjS2Tg/gk-v1SqN.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Business Centers",
+    title: "Connecting Minds", src: "https://i.postimg.cc/yNhNxyv1/UdDTEeNg.jpg",
     content: <DummyContent />,
   },
 
   {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Business Centers",
+    title: "Connecting Minds", src: "https://i.postimg.cc/0Qc2d5Th/G-QP6d.jpg",
     content: <DummyContent />,
   },
   {
-    category: "iOS",
-    title: "Photography just got better.",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Business Centers",
+    title: "Connecting Minds", src: "https://i.postimg.cc/K8MjS2Tg/gk-v1SqN.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Business Centers",
+    title: "Connecting Minds",
+    src: "https://ucf9f471342ee46080115d3ff424.previews.dropboxusercontent.com/p/thumb/ACmxq9dDKiYi8vE6hCqq9rfCNCCSohnc1w2X7bxUI5s5OHzZU44g2_K9nc1KL2Knpy2srvgHvLQFhbUd8UnSLStdKXdxiHnZWTggpx7wsuV0sl6Bfg7gUaMFqPBMxkR16aCuvUfJzdM2izjN402T8ouyCSTHK-NAeapIdm99PCfkhdD_3HsXvZQU0rwSkrW0w0-qLJ7-Z77oP4cwVd9rCraTKJVuy8BjhsaPfpIrb52QZgYAGQ71lkjO_LpGD-XaU8wBwu21aNrBHr-Zr5NWbMcmKAL00Dh2tPVTccjCVThp9nsjI3Wb1GA9pphGszhSX0T2pfv_iompma45_dkIS9WIaSGSUWSmLkUAl5h7p7nMBkady4qe2TZe_ciqeO7pTQNdWez_w_oW1hrlAkegczIGOa7HjZnsMSKOHDVWcsu56wiwaLn3zGq3KcJCdhp3HBPzknUqpqh442MgNBTnWq_DPJX695g1GWj3il_KuYvV2dbUv5zZAVq3aUtyDJdzMHUem1vPR0OGfLwSqsN4vg4-jFDj_bLynEQ67x5p0i_9Og/p.jpeg",
     content: <DummyContent />,
   },
 ];

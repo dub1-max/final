@@ -186,7 +186,7 @@ export const Card = ({
   useOutsideClick(containerRef, () => handleClose());
 
   const handleOpen = () => {
-    setOpen(true);
+    setOpen(false); //after the image is clicked set true for yes 
   };
 
   const handleClose = () => {
