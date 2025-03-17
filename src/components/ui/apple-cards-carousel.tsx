@@ -149,6 +149,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           </button>
         </div>
       </div>
+      
     </CarouselContext.Provider>
   );
 };

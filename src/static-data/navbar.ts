@@ -76,14 +76,15 @@ export const navbarData: NavbarItem[] = [
     title: "CoWorking",
     href: "/coworking",
     external: true,
-  },
+  // },
 
-  {
-    id: uuid(),
-    title: "MeetingRooms",
-    href: "/meetroom_main",
-    external: true,
-  },
+  // {
+  //   id: uuid(),
+  //   title: "MeetingRooms",
+  //   href: "/meetroom_main",
+  //   external: true,
+    }
+  ,
 
   {
     id: uuid(),

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-export function AppleCardsCarouselDemo() {
+export function AppleCardsCarouselDesk() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
