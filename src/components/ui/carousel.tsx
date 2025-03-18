@@ -5,7 +5,7 @@ import SectionTitle from "../Common/SectionTitle";
 
 interface SlideData {
   title: string;
-  button: string;
+  // button: string;
   src: string;
 }
 
@@ -28,8 +28,8 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     requestAnimationFrame(animate);
   }, []);
 
-  const { src, button, title } = slide;
-
+  // const { src, button, title } = slide;
+const { src , title } = slide;
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
       <li
@@ -62,11 +62,11 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           }`}
         >
           <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold  relative">{title}</h2>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <button className="mt-6 px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-md">
               {button}
             </button>
-          </div>
+          </div> */}
         </article>
       </li>
     </div>
