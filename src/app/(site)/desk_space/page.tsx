@@ -5,7 +5,7 @@ import Maps from "@/components/Maps";
 import Support from "@/components/Support";
 import mapConfig from "@/static-data/mapConfig";
 import { Metadata } from "next";
-import { AppleCardsCarouselDesk } from "../apple_carousel_desk/page";
+// import { AppleCardsCarouselDesk } from "../apple_carousel_desk/page";
 
 const siteName = process.env.SITE_NAME;
 
@@ -20,7 +20,7 @@ export default function DeskSpacePage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-        <AppleCardsCarouselDesk/>
+        {/* <AppleCardsCarouselDesk/> */}
           <AboutDeskSpace />
           {/** change this after */}
           <FeaturesMeeting />
