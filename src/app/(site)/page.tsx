@@ -27,6 +27,7 @@ export default function Home() {
     <>
     <SpeedInsights/>
     <Analytics/>
+    
       <Hero />
       <Features />
       <About />
