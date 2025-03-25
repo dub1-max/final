@@ -27,7 +27,6 @@ export default function Home() {
     <>
     <SpeedInsights/>
     <Analytics/>
-    
       <Hero />
       <Features />
       <About />
@@ -39,6 +38,7 @@ export default function Home() {
       {/*<Pricing />*/}
       {/* <HomeBlogSection /> */}
       {/**<Support /> map and support removed form main page*/} 
+      
       <AppleCardsCarouselDemo/>
       <Support />
       <CallToAction />
