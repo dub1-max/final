@@ -49,14 +49,14 @@ export default function AboutContent() {
         {/* About Tab */}
         {activeTab === "about" && (
           <TabPanel
-            title="GoBiz"
+            title="Explore"
             image1="/images/about/image-1.jpg"
             image1Alt="About Image 1"
             image2="/images/about/image-2.jpg"
             image2Alt="About Image 2"
           >
             <p className="mb-6 text-base text-dark-text">
-              At <b>GoBiz</b>, we recognize that modern businesses need flexibility
+              At <b>Explore</b>, we recognize that modern businesses need flexibility
               and professionalism in their work environments. Our business center is
               designed to meet the evolving needs of today&aposs entrepreneurs and companies.
             </p>
@@ -65,7 +65,7 @@ export default function AboutContent() {
               enterprises alike. You&aposll find everything you need to thrive right at your doorstep.
             </p>
             <p className="text-base text-dark-text">
-              Whether you are launching a new idea or managing an established business, <b>GoBiz</b> provides the perfect setting to help you succeed. Join us and elevate your work experience!
+              Whether you are launching a new idea or managing an established business, <b>Explore</b> provides the perfect setting to help you succeed. Join us and elevate your work experience!
             </p>
           </TabPanel>
         )}
@@ -73,7 +73,7 @@ export default function AboutContent() {
         {/* Mission Tab */}
         {activeTab === "mission" && (
           <TabPanel
-            title="Why Choose GoBiz?"
+            title="Why Choose Explore?"
             image1="/images/about/image-1.jpg"
             image1Alt="Mission Image 1"
             image2="/images/about/image-2.jpg"
@@ -101,14 +101,14 @@ export default function AboutContent() {
         {/* Vision Tab */}
         {activeTab === "vision" && (
           <TabPanel
-            title="What is Our Vision in GoBiz?"
+            title="What is Our Vision in Explore?"
             image1="/images/about/image-1.jpg"
             image1Alt="Vision Image 1"
             image2="/images/about/image-2.jpg"
             image2Alt="Vision Image 2"
           >
             <p className="mb-6 text-base text-dark-text">
-              At <b>GoBiz</b>, our mission is to create vibrant and flexible
+              At <b>Explore</b>, our mission is to create vibrant and flexible
               workspaces that empower businesses in Dubai to flourish. We 
               are dedicated to cultivating a dynamic environment where entrepreneurs, 
               startups, and established enterprises can collaborate, innovate, and achieve 

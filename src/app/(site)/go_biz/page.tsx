@@ -10,11 +10,6 @@ import Calendar from "@/components/Calender";
 import Carousel_UI from "@/components/ui/carousel";
 
 const siteName = process.env.SITE_NAME;
-const slides = [
-  "https://i.ibb.co/ncrXc2V/1.png",
-  "https://i.ibb.co/B3s7v4h/2.png",
-  "https://i.ibb.co/XXR8kzF/3.png"
-  ];
 
   const slideData = [
     {
@@ -52,8 +47,8 @@ export default function GoBizPage() {
         <Carousel_UI slides={slideData} />
         <AboutGB/>
           <Go_Biz />
-          <Maps googleMapUrl={mapConfig.connectingmindsurl}/>
-          <Calendar />
+          <Maps googleMapUrl={mapConfig.explore_map}/>
+          {/* <Calendar /> */}
           <Support/>
         </div>
       </section>

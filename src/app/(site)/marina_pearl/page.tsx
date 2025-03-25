@@ -10,11 +10,6 @@ import mapConfig from "@/static-data/mapConfig";
 import Carousel_UI from "@/components/ui/carousel";
 
 const siteName = process.env.SITE_NAME;
-const slides = [
-  "https://i.ibb.co/ncrXc2V/1.png",
-  "https://i.ibb.co/B3s7v4h/2.png",
-  "https://i.ibb.co/XXR8kzF/3.png",
-];
 
 
 const slideData = [
@@ -60,7 +55,7 @@ export default function MarinaPearlPage() {
 
           <AboutMP />
           <Marina_pearl />
-          <Calendar />
+          {/* <Calendar /> */}
           <Maps googleMapUrl={mapConfig.marinapearl_map}/>
           <Support />
         </div>

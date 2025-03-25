@@ -46,8 +46,8 @@ export default function ProBoxPage() {
           <Carousel_UI slides={slideData} />
           <AboutPB />
           <Pro_Box />
-          <Maps googleMapUrl={mapConfig.connectingmindsurl} />
-          <Calendar />
+          <Maps googleMapUrl={mapConfig.probox_map} />
+          {/* <Calendar /> */}
           <Support />
         </div>
       </section>

@@ -6,13 +6,9 @@ import Calendar from "@/components/Calender";
 
 import { Metadata } from "next";
 import Carousel_UI from "@/components/ui/carousel";
-const slides = [
-  "https://i.ibb.co/ncrXc2V/1.png",
-  "https://i.ibb.co/B3s7v4h/2.png",
-  "https://i.ibb.co/XXR8kzF/3.png"
-  ];
+import Maps from "@/components/Maps";
+import mapConfig from "@/static-data/mapConfig";
 
-  
 const slideData = [
   {
     title: "Mystic Mountains",
@@ -52,7 +48,8 @@ export default function BizSpacePage() {
           <Carousel_UI slides={slideData} />
           <AboutBS/>
           <Biz_Space />
-          <Calendar/>
+          {/* <Calendar/> */}
+          <Maps googleMapUrl={mapConfig.bizspace_map} />
           <Support />  
         </div>
       </section>

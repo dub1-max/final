@@ -113,10 +113,7 @@ export default function Biz_Space() {
           </Link>
         </div>*/}
 
-           {
-        
-          /* Google Maps embed */}
-            <div
+            {/* <div
               style={{
                 width: "100%",
                 height: "60vh",
@@ -133,9 +130,8 @@ export default function Biz_Space() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
-            </div>
-
-            {/* Contact Information */}
+            </div> */}
+            {/*
             <div className="-mx-4 flex flex-wrap pt-12">
               <div className="w-full px-4 md:w-1/2 lg:w-1/4">
                 <div className="mb-6">
@@ -175,7 +171,6 @@ export default function Biz_Space() {
                     aria-label="social-link"
                     className="text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    {/* Replace the SVG content with a proper icon */}
                     <svg
                       width="24"
                       height="24"
@@ -190,7 +185,7 @@ export default function Biz_Space() {
                     aria-label="social-link"
                     className="text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    {/* Replace the SVG content with a proper icon */}
+      
                     <svg
                       width="22"
                       height="22"
@@ -211,7 +206,6 @@ export default function Biz_Space() {
                     aria-label="social-link"
                     className="text-dark-text hover:text-primary dark:hover:text-white"
                   >
-                    {/* Replace the SVG content with a proper icon */}
                     <svg
                       width="24"
                       height="24"
@@ -225,7 +219,7 @@ export default function Biz_Space() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

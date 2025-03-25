@@ -25,9 +25,10 @@ export function AppleCardsCarouselDemo() {
         title="Gallery, Previews and Portfolio"
         paragraph=""
       />
-
-      <Carousel items={cards} />
-    
+      <div className="" >
+        <Carousel items={cards} />
+       
+      </div>
     </div>
   );
 }
