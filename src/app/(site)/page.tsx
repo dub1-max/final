@@ -14,7 +14,7 @@ import { Metadata } from "next";
 import { Sliders } from "react-feather";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react"
-import { AppleCardsCarouselDemo } from "./apple_carousel/page";
+import AppleCardsCarouselDemo from "./apple_carousel/page";
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
