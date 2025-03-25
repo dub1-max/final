@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
     <SpeedInsights/>
-    <Analytics/>
+    {/* <Analytics/> */}
       <Hero />
       <Features />
       <About />
