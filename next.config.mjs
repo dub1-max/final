@@ -22,7 +22,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "*.previews.dropboxusercontent.com",
+        hostname: "uc0f9d0e27987502d3ee64a8e143.previews.dropboxusercontent.com",
         port: "",
       },
     ],

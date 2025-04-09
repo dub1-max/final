@@ -40,6 +40,7 @@ export default function Home() {
       {/**<Support /> map and support removed form main page*/} 
       
       <AppleCardsCarouselDemo/>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <Support />
       <CallToAction />
     </>
