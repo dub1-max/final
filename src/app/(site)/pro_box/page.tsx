@@ -8,6 +8,7 @@ import AboutPB from "@/components/AboutPB";
 import mapConfig from "@/static-data/mapConfig";
 import Maps from "@/components/Maps";
 import Carousel_UI from "@/components/ui/carousel";
+import AppleCardsCarouselPB from "../apple_carousel_gb copy/page";
 
 const siteName = process.env.SITE_NAME;
 const slideData = [
@@ -43,7 +44,8 @@ export default function ProBoxPage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-          <Carousel_UI slides={slideData} />
+          {/* <Carousel_UI slides={slideData} /> */}
+          <AppleCardsCarouselPB/>
           <AboutPB />
           <Pro_Box />
           <Maps googleMapUrl={mapConfig.probox_map} />

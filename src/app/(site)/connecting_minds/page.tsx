@@ -13,6 +13,7 @@ import mapConfig from "@/static-data/mapConfig";
 //   "https://i.ibb.co/XXR8kzF/3.png"
 // ];
 import { Metadata } from "next";
+import AppleCardsCarouselCM from "../apple_carousel_cm/page";
 
 const siteName = process.env.SITE_NAME;
 
@@ -49,7 +50,8 @@ export default function ConnectingMindsPage() {
       <section className="pt-10">
         <div className="px-4 xl:container">
           {/* <Carousel slides={slides}/> */}
-          <Carousel_UI slides={slideData} />
+          {/* <Carousel_UI slides={slideData} /> */}
+          <AppleCardsCarouselCM/>
           <AboutCM />
           <Connecting_Minds />
           <Maps googleMapUrl={mapConfig.connectingmindsurl} />

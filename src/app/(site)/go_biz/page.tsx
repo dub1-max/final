@@ -8,6 +8,7 @@ import mapConfig from "@/static-data/mapConfig";
 import calConfig from "@/static-data/calConfig";
 import Calendar from "@/components/Calender";
 import Carousel_UI from "@/components/ui/carousel";
+import AppleCardsCarouselGB from "../apple_carousel_gb/page";
 
 const siteName = process.env.SITE_NAME;
 
@@ -44,7 +45,8 @@ export default function GoBizPage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-        <Carousel_UI slides={slideData} />
+        {/* <Carousel_UI slides={slideData} /> */}
+        <AppleCardsCarouselGB/>
         <AboutGB/>
           <Go_Biz />
           <Maps googleMapUrl={mapConfig.explore_map}/>
