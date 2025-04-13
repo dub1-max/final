@@ -12,6 +12,7 @@ async function runGitCommands() {
       }
     ]);
 
+    
     // Execute Git commands
     exec('git add .', (err, stdout, stderr) => {
       if (err) {
