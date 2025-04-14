@@ -2,6 +2,8 @@ import AboutPrivate from "@/components/AboutPrivate";
 import CarouselPrivateOffices from "@/components/CarouselPrivateOffices";
 import Private_Offices from "@/components/Private_Offices";
 import Support from "@/components/Support";
+import AppleCardsCarouselBS from "../apple_carousel_po/page";
+
 import { Metadata } from "next";
 const slides = [
   "https://i.ibb.co/ncrXc2V/1.png",
@@ -21,16 +23,11 @@ export default function PrivateOfficesPage() {
   return (
     <>
       <section className="pt-10">
-        <div className="px-4 xl:container">
-          <CarouselPrivateOffices
-            autoSlide={true}
-            autoSlideInterval={6000}
-            slides={slides}
-          />
+      <AppleCardsCarouselBS/>
+
           <AboutPrivate />
           <Private_Offices />
           <Support />
-        </div>
       </section>
     </>
   );

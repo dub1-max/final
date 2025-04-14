@@ -8,6 +8,7 @@ import Calendar from "@/components/Calender";
 import Maps from "@/components/Maps";
 import mapConfig from "@/static-data/mapConfig";
 import Carousel_UI from "@/components/ui/carousel";
+import AppleCardsCarouselMP from "../apple_carousel_mp/page";
 
 const siteName = process.env.SITE_NAME;
 
@@ -46,12 +47,8 @@ export default function MarinaPearlPage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-          {/* <CarouselMarina
-            autoSlide={true}
-            autoSlideInterval={6000}
-            slides={slides}
-          /> */}
-<Carousel_UI slides={slideData} />
+        <AppleCardsCarouselMP/>
+
 
           <AboutMP />
           <Marina_pearl />

@@ -10,7 +10,7 @@ export default function DeiraMain() {
         <div className="relative mx-auto mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
             <span className="title left-20 !translate-x-0">DEIRA</span>
             <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-              deira
+              Deira
             </h2>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function DeiraMain() {
             />
             <div className="p-6 rounded-b-lg bg-white dark:bg-gray-800">
               <h3 className="mb-3 text-xl font-bold text-blue-600 transition-colors duration-300 hover:text-blue-400">
-                Go Biz
+                Explore Plus
               </h3>
               <p className="mb-4 text-gray-700 dark:text-gray-300">
                 Enjoy the sunlight in this calm spot and come up with a new brilliant idea for your business.

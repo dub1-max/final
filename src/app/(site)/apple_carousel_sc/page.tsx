@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "",
 };
 
-const AppleCardsCarouselGB = () => {
+const AppleCardsCarouselSC = () => {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
@@ -30,36 +30,43 @@ const AppleCardsCarouselGB = () => {
   );
 };
 
-export default AppleCardsCarouselGB;
+export default AppleCardsCarouselSC;
+
 const data = [
   {
     category: "Business Centers",
-    title: "Explore Plus",
-    src: "https://i.postimg.cc/1tLxQNSm/DSC08844.jpg",
+    title: "Smart Cabins",
+    src: "https://i.postimg.cc/0ywR25cP/image-1.jpg",
     content: null,
   },
   {
     category: "Business Centers",
-    title: "Explore Plus",
-    src: "https://i.postimg.cc/sDYkkXNz/DSC08857.jpg",
+    title: "Smart Cabins",
+    src: "https://i.postimg.cc/K8MjS2Tg/gk-v1SqN.jpg",
     content: null,
   },
   {
     category: "Business Centers",
-    title: "Explore Plus",
-    src: "https://i.postimg.cc/h4dW0M8f/DSC08870.jpg",
+    title: "Smart Cabins",
+    src: "https://i.postimg.cc/yNhNxyv1/UdDTEeNg.jpg",
     content: null,
   },
   {
     category: "Business Centers",
-    title: "Explore Plus",
-    src: "https://i.postimg.cc/2yvs88j4/DSC08986.jpg",
+    title: "Smart Cabins",
+    src: "https://i.postimg.cc/0Qc2d5Th/G-QP6d.jpg",
     content: null,
   },
   {
     category: "Business Centers",
-    title: "Explore Plus",
-    src: "https://i.postimg.cc/NfvhCTbb/DSC08992.jpg",
+    title: "Smart Cabins",
+    src: "https://i.postimg.cc/K8MjS2Tg/gk-v1SqN.jpg",
+    content: null,
+  },
+  {
+    category: "Business Centers",
+    title: "Smart Cabins",
+    src: "https://i.postimg.cc/0Qc2d5Th/G-QP6d.jpg",
     content: null,
   },
 ];

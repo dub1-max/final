@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import CarouselSmartCabin from "@/components/CarouselSmartCabin";
 import Support from "@/components/Support";
 import AboutSmart from "@/components/AboutSmart";
+import AppleCardsCarouselSC from "../apple_carousel_sc/page";
+
 const siteName = process.env.SITE_NAME;
 const slides = [
   "https://i.ibb.co/ncrXc2V/1.png",
@@ -20,16 +22,11 @@ export default function SmartCabinsPage() {
   return (
     <>
       <section className="pt-10">
-        <div className="px-4 xl:container">
-          <CarouselSmartCabin
-            autoSlide={true}
-            autoSlideInterval={6000}
-            slides={slides}
-          />
+      <AppleCardsCarouselSC/>
+
           <AboutSmart/>
           <Smart_Cabins />
           <Support />
-        </div>
       </section>
     </>
   );

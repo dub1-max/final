@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import Carousel_UI from "@/components/ui/carousel";
 import Maps from "@/components/Maps";
 import mapConfig from "@/static-data/mapConfig";
-
+import AppleCardsCarouselBS from "../apple_carousel_bs/page";
 const slideData = [
   {
     title: "Mystic Mountains",
@@ -44,8 +44,8 @@ export default function BizSpacePage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-          {/* <CarouselBizSpace autoSlide={true} autoSlideInterval={6000} slides={slides} /> */}
-          <Carousel_UI slides={slideData} />
+        <AppleCardsCarouselBS/>
+
           <AboutBS/>
           <Biz_Space />
           {/* <Calendar/> */}

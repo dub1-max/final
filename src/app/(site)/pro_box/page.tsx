@@ -8,7 +8,7 @@ import AboutPB from "@/components/AboutPB";
 import mapConfig from "@/static-data/mapConfig";
 import Maps from "@/components/Maps";
 import Carousel_UI from "@/components/ui/carousel";
-import AppleCardsCarouselPB from "../apple_carousel_gb copy/page";
+import AppleCardsCarouselPB from "../apple_carousel_pb/page";
 
 const siteName = process.env.SITE_NAME;
 export const metadata: Metadata = {
